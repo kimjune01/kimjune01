@@ -29,3 +29,4 @@ Research engineer at EA working on [Citadel](https://gitlab.ea.com/atom1), an au
 ---
 
 Build in public. AGPL where it matters. Questions? june@june.kim
+
