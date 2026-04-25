@@ -24,7 +24,7 @@ Most of my thinking lives at [june.kim](https://june.kim) — implementation not
 
 ## Day job
 
-Research engineer at EA working on [Citadel](https://gitlab.ea.com/atom1), an automated game testing platform. AI agents play games on real consoles, detect bugs, report them through an event pipeline.
+Research engineer at EA on the AIML team — automated game testing. AI agents play games on real consoles, detect bugs, report them through an event pipeline.
 
 ---
 
