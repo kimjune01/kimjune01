@@ -12,6 +12,8 @@ sankey-beta
     dripped, closed, 40
 ```
 
+*since 2026-04-11 (pipeline epoch)*
+
 ```graphql
 { merged: search(query: "is:pr is:merged author:kimjune01 created:>2026-04-11", type: ISSUE) { issueCount }
   closed: search(query: "is:pr is:closed is:unmerged author:kimjune01 created:>2026-04-11", type: ISSUE) { issueCount } }
