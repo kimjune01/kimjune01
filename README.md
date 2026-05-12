@@ -1,4 +1,4 @@
-## 45% merge rate · 1 streak (02:00 UTC)
+## 45% merge rate · 1 streak (02:02 UTC)
 
 ```mermaid
 sankey-beta
@@ -39,7 +39,7 @@ sankey-beta
 | ✅ | antonmedv/fx | [#414](https://github.com/antonmedv/fx/pull/414) Fix file argument detection when stdin is /de |
 | ✅ | GreptimeTeam/greptimedb | [#8092](https://github.com/GreptimeTeam/greptimedb/pull/8092) fix: remove unparsed [heartbeat] sections fro |
 
-## 🚨⚠️AI Slop⚠️🚨
+## AI SLOP
 
 | PR | time to close | bugs | title |
 |---|---|---|---|
