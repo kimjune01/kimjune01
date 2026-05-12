@@ -1,4 +1,4 @@
-## 46% merge rate · 53 merged · 40 repos · 🔥 streak: 3
+## 45% merge rate · 53 merged · 40 repos · 🔥 streak: 3
 
 ```mermaid
 sankey-beta
@@ -52,7 +52,7 @@ xychart-beta
 | contributor | merged | rate | repos |
 |---|---|---|---|
 | SAY-5 | 59 | 67% | 54 |
-| kimjune01 | 53 | 46% | 40 |
+| kimjune01 | 53 | 45% | 40 |
 | mvanhorn | 14 | 82% | 12 |
 | ununununium | 12 | 70% | 10 |
 | officialasishkumar | 5 | 71% | 4 |
