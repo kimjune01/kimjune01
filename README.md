@@ -1,15 +1,15 @@
-## 45% merge rate · 0 streak (04:24 UTC)
+## 44% merge rate · 0 streak (04:36 UTC)
 
 ```mermaid
 sankey-beta
-    triaged,    submitted, 190
+    triaged,    submitted, 192
     triaged,    throttled, 154
     triaged,    rejected,  11
-    submitted,  resolved,  33
-    submitted,  dripped,   42
-    submitted,  open,      115
+    submitted,  resolved,  34
+    submitted,  dripped,   39
+    submitted,  open,      119
     resolved,   merged,    15
-    resolved,   closed,    18
+    resolved,   closed,    19
 ```
 
 *since 2026-05-09T00:34:00Z (pipeline epoch)*
@@ -28,6 +28,7 @@ sankey-beta
 
 | | repo | PR |
 |---|------|----|
+| ❌ | immich-app/immich | [#28377](https://github.com/immich-app/immich/pull/28377) fix(web): add focus-visible outlines to sideb |
 | ❌ | immich-app/immich | [#28375](https://github.com/immich-app/immich/pull/28375) fix(web): add focus-visible outlines to sideb |
 | ✅ | rustledger/rustledger | [#1094](https://github.com/rustledger/rustledger/pull/1094) fix: swap gitleaks-action for standalone bina |
 | ✅ | jmpsec/osctrl | [#807](https://github.com/jmpsec/osctrl/pull/807) Fix OSX quick-enroll: stop osqueryd before un |
@@ -37,7 +38,6 @@ sankey-beta
 | ✅ | azerty9971/xtend_tuya | [#930](https://github.com/azerty9971/xtend_tuya/pull/930) Fix battery device class ambiguity for generi |
 | ❌ | dapr/dapr | [#9924](https://github.com/dapr/dapr/pull/9924) refactor: simplify workflow concurrency confi |
 | ✅ | apache/airflow | [#66686](https://github.com/apache/airflow/pull/66686) Fix FAB role deletion foreign key constraint  |
-| ❌ | astral-sh/ruff | [#25066](https://github.com/astral-sh/ruff/pull/25066) [flake8-todos] Recognize Jira-style issue IDs |
 
 ## AI SLOP
 
