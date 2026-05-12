@@ -3,18 +3,18 @@
 ```mermaid
 sankey-beta
     triaged,    submitted, 264
-    triaged,    throttled, 189
+    triaged,    throttled, 182
     triaged,    rejected,  17
     submitted,  resolved,  38
-    submitted,  dripped,   76
-    submitted,  open,      150
+    submitted,  dripped,   74
+    submitted,  open,      152
     resolved,   merged,    18
     resolved,   closed,    20
 ```
 
 ```mermaid
 xychart-beta
-    title "PRs merged"
+    title "PRs merged per day"
     x-axis ["05-09", "05-10", "05-11", "05-12"]
     y-axis "merged"
     bar [1, 5, 8, 4]
