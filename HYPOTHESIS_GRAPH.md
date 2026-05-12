@@ -154,7 +154,7 @@ H6 (stochastic search) → H1 (issue-first) → H5 (easy first for solo maintain
 | Merge rate (raw) | 15/43 = 35% |
 | Merge rate (adjusted) | 15/27 = 56% |
 | Pipeline errors | 11 |
-| Credence tests | 5 (uptime-kuma ×2, litestar, tinygrad, llama.cpp) |
+| Credence tests | 4 (uptime-kuma ×2, litestar, llama.cpp) |
 | External | 2 (yazi, mcpc) |
 | Pre-reg accuracy | 5/6 = 83% |
 | QA bugs caught pre-push | 13 (7 session-4, 6 pertpy) |
@@ -166,7 +166,7 @@ H6 (stochastic search) → H1 (issue-first) → H5 (easy first for solo maintain
 | Category | Count | Pipeline-preventable? |
 |----------|-------|-----------------------|
 | Pipeline error (wrong premise, wrong approach, stale, CONTRIBUTING) | 11 | Yes |
-| Credence test (AI policy/ban discovery) | 5 | No — information gathering |
+| Credence test (AI policy/ban discovery) | 4 | No — information gathering |
 | External (superseded/maintainer fix) | 2 | No |
 | AI detection (description, not code) | 1 | Partially (why-gate helps) |
 
