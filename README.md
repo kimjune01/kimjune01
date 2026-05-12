@@ -1,4 +1,4 @@
-## 64% merge rate · 1 streak (01:46 UTC)
+## 64% merge rate · 1 streak (01:49 UTC)
 
 ```mermaid
 sankey-beta
@@ -38,8 +38,8 @@ sankey-beta
 <summary>verify</summary>
 
 ```graphql
-{ merged: search(query: "is:pr is:merged author:kimjune01 -repo:tinygrad/tinygrad created:>2026-05-09", type: ISSUE) { issueCount }
-  closed: search(query: "is:pr is:closed is:unmerged author:kimjune01 -repo:tinygrad/tinygrad created:>2026-05-09", type: ISSUE) { issueCount } }
+{ merged: search(query: "is:pr is:merged author:kimjune01 created:>2026-05-09", type: ISSUE) { issueCount }
+  closed: search(query: "is:pr is:closed is:unmerged author:kimjune01 created:>2026-05-09", type: ISSUE) { issueCount } }
 ```
 
 </details>
