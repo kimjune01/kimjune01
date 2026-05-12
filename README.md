@@ -1,15 +1,15 @@
-## 45% merge rate · 0 streak (08:52 UTC)
+## 44% merge rate · 0 streak (09:13 UTC)
 
 ```mermaid
 sankey-beta
-    triaged,    submitted, 340
-    triaged,    throttled, 142
-    triaged,    rejected,  38
-    submitted,  resolved,  44
-    submitted,  dripped,   108
-    submitted,  open,      188
-    resolved,   merged,    20
-    resolved,   closed,    24
+    triaged,    submitted, 343
+    triaged,    throttled, 136
+    triaged,    rejected,  44
+    submitted,  resolved,  47
+    submitted,  dripped,   102
+    submitted,  open,      194
+    resolved,   merged,    21
+    resolved,   closed,    26
 ```
 
 ```mermaid
@@ -17,7 +17,7 @@ xychart-beta
     title "PRs merged per day"
     x-axis ["05-09", "05-10", "05-11", "05-12"]
     y-axis "merged"
-    bar [1, 5, 8, 6]
+    bar [1, 5, 8, 7]
 ```
 
 *since 2026-05-09T00:34:00Z (pipeline epoch)*
@@ -36,6 +36,9 @@ xychart-beta
 
 | | repo | PR |
 |---|------|----|
+| ❌ | ggml-org/llama.cpp | [#22965](https://github.com/ggml-org/llama.cpp/pull/22965) server: fix n_predict=-2 (generate until cont |
+| ❌ | cucumber/gherkin | [#589](https://github.com/cucumber/gherkin/pull/589) fix(c): segfault when one placeholder is a pr |
+| ✅ | JuliaDebug/Infiltrator.jl | [#176](https://github.com/JuliaDebug/Infiltrator.jl/pull/176) fix: dictionary key tab completion |
 | ❌ | dhonus/jellyfin-tui | [#194](https://github.com/dhonus/jellyfin-tui/pull/194) refactor: fix clippy warnings for code qualit |
 | ✅ | yrosseel/lavaan | [#551](https://github.com/yrosseel/lavaan/pull/551) Document 'icc' option in lavInspect help page |
 | ✅ | IppClub/Dora-SSR | [#97](https://github.com/IppClub/Dora-SSR/pull/97) Fix: remove default always-on-top behavior fo |
@@ -43,9 +46,6 @@ xychart-beta
 | ❌ | kanidm/kanidm | [#4337](https://github.com/kanidm/kanidm/pull/4337) Fix false positive permission warning for cac |
 | ❌ | kubescape/kubescape | [#2097](https://github.com/kubescape/kubescape/pull/2097) fix: harden vulnerability manifest URI parsin |
 | ✅ | aymericzip/intlayer | [#427](https://github.com/aymericzip/intlayer/pull/427) Fix logo animation positioning for RTL langua |
-| ❌ | dhonus/jellyfin-tui | [#193](https://github.com/dhonus/jellyfin-tui/pull/193) fix: reduce CPU usage with frame limiter |
-| ✅ | kubescape/kubescape | [#2076](https://github.com/kubescape/kubescape/pull/2076) fix: strip URI prefix before splitting in Rea |
-| ✅ | chojs23/concord | [#45](https://github.com/chojs23/concord/pull/45) fix: align cursor position with newline-aware |
 
 ## Leaderboard
 
@@ -53,10 +53,10 @@ xychart-beta
 
 | contributor | merged | rate | repos |
 |---|---|---|---|
-| SAY-5 | 57 | 67% | 53 |
+| SAY-5 | 59 | 67% | 54 |
+| kimjune01 | 15 | 51% | 15 |
 | mvanhorn | 14 | 82% | 12 |
-| kimjune01 | 14 | 53% | 14 |
-| ununununium | 11 | 68% | 9 |
+| ununununium | 12 | 70% | 10 |
 | officialasishkumar | 5 | 71% | 4 |
 
 [Join the leaderboard](https://github.com/kimjune01/sweep/blob/master/README.md) · [Protect your repo](https://github.com/kimjune01/sweep/blob/master/action.yml)
