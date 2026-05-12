@@ -1,14 +1,14 @@
-## 44% merge rate · 0 streak (04:52 UTC)
+## 45% merge rate · 1 streak (05:02 UTC)
 
 ```mermaid
 sankey-beta
     triaged,    submitted, 195
     triaged,    throttled, 172
     triaged,    rejected,  11
-    submitted,  resolved,  34
+    submitted,  resolved,  35
     submitted,  dripped,   42
-    submitted,  open,      119
-    resolved,   merged,    15
+    submitted,  open,      118
+    resolved,   merged,    16
     resolved,   closed,    19
 ```
 
@@ -28,6 +28,7 @@ sankey-beta
 
 | | repo | PR |
 |---|------|----|
+| ✅ | chojs23/concord | [#45](https://github.com/chojs23/concord/pull/45) fix: align cursor position with newline-aware |
 | ❌ | immich-app/immich | [#28377](https://github.com/immich-app/immich/pull/28377) fix(web): add focus-visible outlines to sideb |
 | ❌ | immich-app/immich | [#28375](https://github.com/immich-app/immich/pull/28375) fix(web): add focus-visible outlines to sideb |
 | ✅ | rustledger/rustledger | [#1094](https://github.com/rustledger/rustledger/pull/1094) fix: swap gitleaks-action for standalone bina |
@@ -37,7 +38,6 @@ sankey-beta
 | ✅ | scverse/pertpy | [#965](https://github.com/scverse/pertpy/pull/965) Fix plot_multicomparison_fc ValueError with d |
 | ✅ | azerty9971/xtend_tuya | [#930](https://github.com/azerty9971/xtend_tuya/pull/930) Fix battery device class ambiguity for generi |
 | ❌ | dapr/dapr | [#9924](https://github.com/dapr/dapr/pull/9924) refactor: simplify workflow concurrency confi |
-| ✅ | apache/airflow | [#66686](https://github.com/apache/airflow/pull/66686) Fix FAB role deletion foreign key constraint  |
 
 ## AI SLOP
 
