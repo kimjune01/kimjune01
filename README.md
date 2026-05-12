@@ -12,7 +12,7 @@ sankey-beta
     submitted, dripped, 30
     resolved, merged, 9
     resolved, closed, 0
-    resolved, 🚨AI Slop🚨, 5
+    resolved, AI-slop, 5
 ```
 
 *since 2026-05-09 (pipeline epoch)* · slop: [uptime-kuma](https://github.com/louislam/uptime-kuma/pull/7371) · [ruff](https://github.com/astral-sh/ruff/pull/25066) · [llama.cpp](https://github.com/ggml-org/llama.cpp/pull/22873) · [litestar](https://github.com/litestar-org/litestar/pull/4755)
