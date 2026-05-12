@@ -1,15 +1,15 @@
-## 46% merge rate · 0 streak (08:51 UTC)
+## 45% merge rate · 0 streak (08:52 UTC)
 
 ```mermaid
 sankey-beta
-    triaged,    submitted, 350
+    triaged,    submitted, 340
     triaged,    throttled, 142
-    triaged,    rejected,  25
-    submitted,  resolved,  43
-    submitted,  dripped,   118
-    submitted,  open,      189
+    triaged,    rejected,  38
+    submitted,  resolved,  44
+    submitted,  dripped,   108
+    submitted,  open,      188
     resolved,   merged,    20
-    resolved,   closed,    23
+    resolved,   closed,    24
 ```
 
 ```mermaid
@@ -36,6 +36,7 @@ xychart-beta
 
 | | repo | PR |
 |---|------|----|
+| ❌ | dhonus/jellyfin-tui | [#194](https://github.com/dhonus/jellyfin-tui/pull/194) refactor: fix clippy warnings for code qualit |
 | ✅ | yrosseel/lavaan | [#551](https://github.com/yrosseel/lavaan/pull/551) Document 'icc' option in lavInspect help page |
 | ✅ | IppClub/Dora-SSR | [#97](https://github.com/IppClub/Dora-SSR/pull/97) Fix: remove default always-on-top behavior fo |
 | ❌ | risingwavelabs/risingwave | [#25609](https://github.com/risingwavelabs/risingwave/pull/25609) fix: use full column subset for distinct agg  |
@@ -45,7 +46,6 @@ xychart-beta
 | ❌ | dhonus/jellyfin-tui | [#193](https://github.com/dhonus/jellyfin-tui/pull/193) fix: reduce CPU usage with frame limiter |
 | ✅ | kubescape/kubescape | [#2076](https://github.com/kubescape/kubescape/pull/2076) fix: strip URI prefix before splitting in Rea |
 | ✅ | chojs23/concord | [#45](https://github.com/chojs23/concord/pull/45) fix: align cursor position with newline-aware |
-| ❌ | immich-app/immich | [#28377](https://github.com/immich-app/immich/pull/28377) fix(web): add focus-visible outlines to sideb |
 
 ## Leaderboard
 
@@ -59,7 +59,7 @@ xychart-beta
 | ununununium | 11 | 68% | 9 |
 | officialasishkumar | 5 | 71% | 4 |
 
-[Join the leaderboard](https://github.com/kimjune01/sweep/blob/master/README.md) · [Protect your repo](https://github.com/kimjune01/sweep#pr-quality-gate)
+[Join the leaderboard](https://github.com/kimjune01/sweep/blob/master/README.md) · [Protect your repo](https://github.com/kimjune01/sweep/blob/master/action.yml)
 
 ## AI SLOP
 
