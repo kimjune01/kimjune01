@@ -1,4 +1,4 @@
-## 45% merge rate · 1 streak (01:53 UTC)
+## 45% merge rate · 1 streak (01:54 UTC)
 
 ```mermaid
 sankey-beta
@@ -46,6 +46,8 @@ sankey-beta
 
 </details>
 
+[hypothesis graph](HYPOTHESIS_GRAPH.md)
+
 ---
 
-[june.kim](https://june.kim) · AGPL where it matters · june@june.kim
+[june.kim](https://june.kim) · AGPL where it matters
