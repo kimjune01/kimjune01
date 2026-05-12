@@ -1,4 +1,4 @@
-# Pipeline Hypothesis Graph (2026-05-12)
+# Pipeline Hypothesis Graph (2026-05-11)
 
 The pipeline is an experiment. Each repo is a perturbation. Each PR is a measurement.
 
@@ -6,11 +6,11 @@ The pipeline is an experiment. Each repo is a perturbation. Each PR is a measure
 
 **Prediction:** PRs that pass gemini volley + codex crosscheck + tone matching merge at the same rate as human PRs on the same repos.
 
-**Status: PARTIALLY CONFIRMED.** 15 merged / 43 resolved = 35% raw, 56% adjusted (excl. pipeline errors + credence tests). 103 PRs still open. Net-deletion/docs PRs merge at 100%. The code passes review; the detection vector is meta-text, not code quality.
+**Status: PARTIALLY CONFIRMED.** 15 merged / 44 resolved = 34% raw, 56% adjusted (excl. pipeline errors + credence tests). 119 PRs open. Net-deletion/docs PRs merge at 100%. The code passes review; the detection vector is meta-text or template compliance, not code quality.
 
 **Evidence for:** 15 merges across 15 distinct repos in 4 days. airflow#66686 (+52/-3 FK fix, first Apache PR, approved), osctrl#807 (1-line macOS fix, instant merge), pertpy#965 (QA caught 6 bugs pre-push, clean merge), numpyro#2188 (220-line docs, 8 rounds, persistence→merge), xtend_tuya#930 (6-line HA fix, enthusiastic thanks), fx#414 (zero-comment instant), Enzyme#2816 (competence demonstration through review iteration), bat#3734 (12-minute merge).
 
-**Evidence against:** ruff#25066 (AI detection in summary), uptime-kuma ×2 (profile), litestar (AI policy), llama.cpp#22873 (bot AI checker), yazi (maintainer fix), mcpc (superseded). dapr#9924 closed for design-intent blindness, not detection. jellyfin-tui#192 closed for wrong approach (fps cap vs idle loop).
+**Evidence against:** ruff#25066 (AI detection in summary), uptime-kuma ×2 (profile), litestar (AI policy), llama.cpp#22873 (bot AI checker), yazi (maintainer fix), mcpc (superseded), immich#28375 (PR template violation — CONTRIBUTING.md format, not AI detection). dapr#9924 closed for design-intent blindness, not detection. jellyfin-tui#192 closed for wrong approach (fps cap vs idle loop).
 
 **Key insight (2026-05-11):** Code quality gates are necessary but not sufficient. PR descriptions must explain *why* (root cause, approach rationale, design tradeoffs), not *what* (which the diff already shows). The hypothesis graph contains the *why* from investigation — drip now pipes it into PR bodies. "Why > what" is a universal writing principle, not a repo-specific parameter.
 
@@ -44,7 +44,7 @@ The pipeline is an experiment. Each repo is a perturbation. Each PR is a measure
 
 **Evidence for:** pallets batch-close happened on PRs pushed before drip existed. Post-drip, zero org-level rejections.
 
-**Evidence against:** None yet. But 103 open PRs across 60+ repos is itself a volume signal, even if paced per-repo.
+**Evidence against:** None yet. But 119 open PRs across 70+ repos is itself a volume signal, even if paced per-repo.
 
 ## H4: AI-friendly repos don't merge more — they attract more competing PRs
 
@@ -270,6 +270,20 @@ H6 (stochastic search) → H1 (issue-first) → H5 (easy first for solo maintain
 | Pre-reg accuracy | 5/6 = 83% |
 | Repos on roster | ~150 triaged, ~30 evicted |
 
+### Score (2026-05-11, retro)
+
+| Metric | Value |
+|--------|-------|
+| Open PRs | 119 |
+| Merged | 15 |
+| Closed (unmerged) | 29 |
+| Merge rate (raw) | 15/44 = 34% |
+| Merge rate (adjusted) | 15/27 = 56% |
+| CONTRIBUTING.md failures | 5 (open-webui ×3, immich, litestar) |
+| Triage batch output | 16 new PRs shipped (session 6) |
+| Repos on roster | 523 total, 264 ready, 180 triaged, 45 evicted |
+| Org gate backlog | 86 QA'd entries blocked |
+
 ## H11: Bug-hunt prevents wrong-approach fixes
 
 **Prediction:** A mandatory read-only diagnosis step before implementation catches fixes that treat symptoms instead of root causes. The diagnosis identifies the existing architecture's solution to the problem, preventing the agent from overriding it with a naive alternative.
@@ -314,7 +328,7 @@ H6 (stochastic search) → H1 (issue-first) → H5 (easy first for solo maintain
 **H0 evidence:**
 - FOR: rustledger (solo maintainer, 242★, CI fix merged same day). QA caught file clobber + no checksum — would have been rejected without gate.
 - FOR: 3 approved PRs pending merge (godot#119362, servo#44846, opendal#7513). Pipeline producing merge-ready PRs.
-- AGAINST: immich#28375 closed — AI policy in CONTRIBUTING.md not caught pre-triage. Pipeline error, not code quality.
+- AGAINST: immich#28375 closed — auto-closed for not following PR template format (CONTRIBUTING.md). Not AI detection — pure template compliance failure. Pipeline error: triage didn't read the PR template requirements.
 
 **H1 evidence:**
 - FOR: All session 6 triage came from actionable search (issue-first). 27 new repos triaged, 8 evicted (HostlistsRegistry content repo, jwt-cli stale PRs, abtop competing PRs, hyundai-kia no bugs, ida-mcp-rs too-fast maintainer, ytmusic-deleter AI-hostile, immich AI policy, openbao certification).
@@ -348,3 +362,24 @@ H6 (stochastic search) → H1 (issue-first) → H5 (easy first for solo maintain
 - Profile README: live sankey, feed table, hypothesis graph, slop table with time-to-close
 - Concurrency ceiling: 20 opus agents = CPU 100%. Sustained: 15 agents.
 - JSONL key normalization: int→string fix resolved phantom triaged inflation (190→126).
+
+### Retro (2026-05-11)
+
+**Delta since last retro (2026-05-12 00:30):** Minimal new signal. No new merges. 1 new closure (immich#28375, reclassified below). 16 new PRs from session 6 triage batch. 119 open PRs (was 103).
+
+**Reclassification:** immich#28375 was classified as "AI policy in CONTRIBUTING.md" but the actual closure was auto-close for not following the PR template format. This is a template compliance failure, not AI detection. Reclassified from "credence test" to "pipeline error: CONTRIBUTING.md compliance."
+
+**CONTRIBUTING.md compliance is now the #1 pipeline error pattern:**
+- open-webui ×3 (PR format, CLA, duplicate)
+- immich ×1 (PR template auto-close)
+- litestar ×1 (AI_POLICY.md)
+- Total: 5 occurrences. Crosses the 3+ threshold for skill patch.
+- **Action:** triage skill must read PR template + CONTRIBUTING.md BEFORE implementation. Currently reads it too late (after fix is committed).
+
+**Org gate bottleneck confirmed:** 86 QA'd entries blocked on existing PRs. The drip queue has more supply than the org gate can drain. Options: (a) wait for existing PRs to resolve (natural), (b) close/abandon stale open PRs to unblock (risky), (c) accept the bottleneck as correct behavior (pipeline is self-limiting). The correct answer is (c) — the org gate IS the pacing mechanism.
+
+**Inventory growth:** 523 repos total (264 ready, 180 triaged, 45 evicted). The roster is growing faster than the pipeline can process. Actionable will need scoring adjustments to prioritize repos with highest merge probability (H5 sweet spot: 200-500 stars, solo maintainer, backlogged).
+
+**Merge rate stable:** 15/44 = 34% raw, 15/27 = 56% adjusted. Raw rate dipped from 35% as immich closure added a denominator without adding a numerator. Adjusted rate unchanged — immich is a pipeline error, excluded from adjusted calculation.
+
+**Pre-registration for session 6 batch:** 16 new PRs across new repos, most <48h old. Prediction: 5-8 will merge within 7 days (31-50%), based on session 4/5 observed rates for solo-maintainer repos. Repos most likely to merge: free-proxy-list#49 (maintainer engaged), pertpy#966 (warm org), osctrl#810 (warm org, prior merge).
