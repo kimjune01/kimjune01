@@ -1,4 +1,4 @@
-## 47% merge rate · 1 streak (06:02 UTC)
+## 47% merge rate · 1 streak (06:03 UTC)
 
 ```mermaid
 sankey-beta
@@ -12,7 +12,13 @@ sankey-beta
     resolved,   closed,    20
 ```
 
-![merges since epoch](merges.svg)
+```mermaid
+xychart-beta
+    title "PRs merged"
+    x-axis ["05-09", "05-10", "05-11", "05-12"]
+    y-axis "merged"
+    bar [1, 5, 8, 4]
+```
 
 *since 2026-05-09T00:34:00Z (pipeline epoch)*
 
