@@ -1,15 +1,15 @@
-## 46% merge rate · 2 streak (03:50 UTC)
+## 45% merge rate · 0 streak (03:53 UTC)
 
 ```mermaid
 sankey-beta
-    triaged,    submitted, 182
-    triaged,    throttled, 133
+    triaged,    submitted, 187
+    triaged,    throttled, 128
     triaged,    rejected,  11
-    submitted,  resolved,  32
-    submitted,  dripped,   40
-    submitted,  open,      110
+    submitted,  resolved,  33
+    submitted,  dripped,   39
+    submitted,  open,      115
     resolved,   merged,    15
-    resolved,   closed,    17
+    resolved,   closed,    18
 ```
 
 *since 2026-05-09T00:34:00Z (pipeline epoch)*
@@ -28,6 +28,7 @@ sankey-beta
 
 | | repo | PR |
 |---|------|----|
+| ❌ | immich-app/immich | [#28375](https://github.com/immich-app/immich/pull/28375) fix(web): add focus-visible outlines to sideb |
 | ✅ | rustledger/rustledger | [#1094](https://github.com/rustledger/rustledger/pull/1094) fix: swap gitleaks-action for standalone bina |
 | ✅ | jmpsec/osctrl | [#807](https://github.com/jmpsec/osctrl/pull/807) Fix OSX quick-enroll: stop osqueryd before un |
 | ❌ | ggml-org/llama.cpp | [#22873](https://github.com/ggml-org/llama.cpp/pull/22873) server : fix n_predict=-2 (generate until con |
@@ -37,7 +38,6 @@ sankey-beta
 | ❌ | dapr/dapr | [#9924](https://github.com/dapr/dapr/pull/9924) refactor: simplify workflow concurrency confi |
 | ✅ | apache/airflow | [#66686](https://github.com/apache/airflow/pull/66686) Fix FAB role deletion foreign key constraint  |
 | ❌ | astral-sh/ruff | [#25066](https://github.com/astral-sh/ruff/pull/25066) [flake8-todos] Recognize Jira-style issue IDs |
-| ✅ | antonmedv/fx | [#414](https://github.com/antonmedv/fx/pull/414) Fix file argument detection when stdin is /de |
 
 ## AI SLOP
 
