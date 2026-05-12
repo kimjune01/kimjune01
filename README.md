@@ -1,6 +1,6 @@
 # June Kim
 
-## 15 merged across 15 repos — 27% merge rate (01:13 UTC)
+## 9 merged across 9 repos — 64% merge rate (01:14 UTC)
 
 ```mermaid
 sankey-beta
@@ -8,15 +8,15 @@ sankey-beta
     triaged, gate_fail, 7
     qa_passed, dripped, 28
     qa_passed, org_blocked, 16
-    dripped, merged, 15
-    dripped, closed, 40
+    dripped, merged, 9
+    dripped, closed, 5
 ```
 
-*since 2026-04-11 (pipeline epoch)*
+*since 2026-05-09 (pipeline epoch)*
 
 ```graphql
-{ merged: search(query: "is:pr is:merged author:kimjune01 created:>2026-04-11", type: ISSUE) { issueCount }
-  closed: search(query: "is:pr is:closed is:unmerged author:kimjune01 created:>2026-04-11", type: ISSUE) { issueCount } }
+{ merged: search(query: "is:pr is:merged author:kimjune01 created:>2026-05-09", type: ISSUE) { issueCount }
+  closed: search(query: "is:pr is:closed is:unmerged author:kimjune01 created:>2026-05-09", type: ISSUE) { issueCount } }
 ```
 
 ## Writing
