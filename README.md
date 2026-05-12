@@ -1,23 +1,18 @@
-## 47% merge rate · 1 streak (05:58 UTC)
+## 47% merge rate · 1 streak (06:01 UTC)
 
 ```mermaid
 sankey-beta
     triaged,    submitted, 258
-    triaged,    throttled, 188
+    triaged,    throttled, 190
     triaged,    rejected,  18
     submitted,  resolved,  38
-    submitted,  dripped,   76
-    submitted,  open,      144
+    submitted,  dripped,   70
+    submitted,  open,      150
     resolved,   merged,    18
     resolved,   closed,    20
 ```
 
-```mermaid
-xychart-beta
-    x-axis ["05-09", "05-10", "05-11", "05-12"]
-    y-axis "merged" 0 --> 20
-    line [1, 6, 14, 18]
-```
+![merges since epoch](merges.svg)
 
 *since 2026-05-09T00:34:00Z (pipeline epoch)*
 
