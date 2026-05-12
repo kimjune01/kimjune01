@@ -34,16 +34,16 @@ xychart-beta
 
 | | repo | PR |
 |---|------|----|
+| ✅ | rustledger/rustledger | [#1095](https://github.com/rustledger/rustledger/pull/1095) fix: add checksum verification and prevent file clobber |
+| ✅ | AhoyISki/duat | [#57](https://github.com/AhoyISki/duat/pull/57) Add Ayu theme with dark, light, and mirage variants |
+| ✅ | vavallee/bindery | [#592](https://github.com/vavallee/bindery/pull/592) Surface timestamps in download queue UI |
+| ❌ | dapr/dapr | [#9936](https://github.com/dapr/dapr/pull/9936) fix: placement dissemination timeout race |
 | ✅ | sqlpage/SQLPage | [#1284](https://github.com/sqlpage/SQLPage/pull/1284) Fix DuckDB :: casting warning |
-| ✅ | cachix/secretspec | [#88](https://github.com/cachix/secretspec/pull/88) fix(test): portable command for empty-output test |
+| ❌ | withastro/astro | [#16704](https://github.com/withastro/astro/pull/16704) fix(build): strip client:only imports from prerender graph |
+| ✅ | cachix/secretspec | [#88](https://github.com/cachix/secretspec/pull/88) fix(test): use portable command for empty-output test |
 | ✅ | tach-org/tach | [#931](https://github.com/tach-org/tach/pull/931) fix: report syntax errors as errors, not warnings |
 | ✅ | njbrake/agent-of-empires | [#1042](https://github.com/njbrake/agent-of-empires/pull/1042) refactor: remove dead claude.config_dir config field |
-| ✅ | jmpsec/osctrl | [#810](https://github.com/jmpsec/osctrl/pull/810) Fix race condition in IncExecution and IncError |
-| ✅ | JuliaDebug/Infiltrator.jl | [#176](https://github.com/JuliaDebug/Infiltrator.jl/pull/176) fix: dictionary key tab completion |
-| ✅ | yrosseel/lavaan | [#551](https://github.com/yrosseel/lavaan/pull/551) Document 'icc' option in lavInspect help page |
-| ✅ | IppClub/Dora-SSR | [#97](https://github.com/IppClub/Dora-SSR/pull/97) Fix: remove default always-on-top for runtime window |
-| ✅ | aymericzip/intlayer | [#427](https://github.com/aymericzip/intlayer/pull/427) Fix logo animation positioning for RTL languages |
-| ✅ | kubescape/kubescape | [#2076](https://github.com/kubescape/kubescape/pull/2076) fix: strip URI prefix before splitting in ReadResource |
+| ❌ | openbao/openbao | [#3067](https://github.com/openbao/openbao/pull/3067) fix: apply socket_mode without requiring socket_user/socket_group |
 
 ## Leaderboard
 
