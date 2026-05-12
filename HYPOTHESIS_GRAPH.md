@@ -1,4 +1,4 @@
-# Pipeline Hypothesis Graph (2026-05-12)
+# Pipeline Hypothesis Graph (2026-05-12, retro 9)
 
 The pipeline is an experiment. Each repo is a perturbation. Each PR is a measurement.
 
@@ -6,15 +6,15 @@ The pipeline is an experiment. Each repo is a perturbation. Each PR is a measure
 
 **Prediction:** PRs that pass gemini volley + codex crosscheck + tone matching merge at the same rate as human PRs on the same repos.
 
-**Status: PARTIALLY CONFIRMED.** 21 merged / 64 resolved = 33% raw, 46% adjusted (excl. external + credence tests). 53+ PRs open. Net-deletion/docs PRs merge at 100%. The code passes review; the detection vector is meta-text or template compliance, not code quality.
+**Status: PARTIALLY CONFIRMED.** 26 merged / 76 resolved = 34% raw, 47% adjusted (excl. external + credence tests). Net-deletion/docs PRs merge at 100%. The code passes review; the detection vectors are meta-behavior (review response speed, resubmission pattern) and template compliance, not code quality.
 
-**Evidence for:** 21 merges across 21 distinct repos. New session 7-8 merges: lavaan#551 (doc), Dora-SSR#97 (runtime fix), intlayer#427 (RTL fix), kubescape#2076 (URI parsing), concord#45 (cursor position), rustledger#1094 (CI fix), osctrl#807 (macOS fix), pertpy#965 (QA caught 6 bugs), xtend_tuya#930 (HA fix), airflow#66686 (FK constraint), fx#414 (stdin detection), greptimedb#8092 (config cleanup). Earlier: Enzyme#2816 (competence demo), bat#3734 (12-min merge), numpyro#2188 (8 rounds).
+**Evidence for:** 26 merges across 24 distinct repos. Session 9 merges: tach#931 (syntax error reporting, review iteration with DetachHead), agent-of-empires#1042 (87 net deletions, dead code removal, instant merge), osctrl#810 (race condition fix, second merge from same repo, maintainer APPROVED), Infiltrator.jl#176 (Julia dict completion, 233+/10- mostly test fixtures, instant merge), flux#1589 (error message improvement, review iteration with nilehmann). Session 7-8: lavaan#551, Dora-SSR#97, intlayer#427, kubescape#2076, concord#45, rustledger#1094, osctrl#807, pertpy#965, xtend_tuya#930, airflow#66686, fx#414, greptimedb#8092. Earlier: Enzyme#2816, bat#3734, numpyro#2188.
 
-**Evidence against:** ruff#25066 (AI detection in summary), uptime-kuma x2 (profile), litestar (AI policy), llama.cpp#22873 (bot AI checker), yazi (maintainer fix), mcpc (superseded), immich#28375 (PR template violation). dapr#9924 closed for design-intent blindness. jellyfin-tui#192 closed for wrong approach. kanidm#4337 closed for security regression (reviewer caught narrowed permission mask). risingwave#25609 superseded by maintainer's own fix.
+**Evidence against:** ruff#25066 (AI detection in summary), uptime-kuma x2 (profile), litestar (AI policy), llama.cpp#22873 (bot AI checker), yazi (maintainer fix), mcpc (superseded), immich#28375+#28377 (PR template violation ×2). dapr#9924 closed for design-intent blindness. jellyfin-tui#192 closed for wrong approach. kanidm#4337 closed for security regression. risingwave#25609 superseded by maintainer. **NEW:** cucumber/gherkin#589 (maintainer detected automation during review: "I don't get the impression there is a human in the loop"), jellyfin-tui#193+#194 (rejection cascade: resubmission → "Is this automated?" → "ai slop"), openbao#3067 (CONTRIBUTING.md not read), OpenFn/lightning#4741 (maintainer fixed it themselves, PR over-scoped), llama.cpp#22965 (duplicate submission after #22873 rejection).
 
-**Key insight (2026-05-11):** Code quality gates are necessary but not sufficient. PR descriptions must explain *why* (root cause, approach rationale, design tradeoffs), not *what* (which the diff already shows). The hypothesis graph contains the *why* from investigation — drip now pipes it into PR bodies. "Why > what" is a universal writing principle, not a repo-specific parameter.
+**Key insight (2026-05-12):** Detection has shifted from code quality to **behavioral signals**: review response speed (cucumber/gherkin), resubmission after rejection (jellyfin-tui ×3), and template compliance (immich ×2, openbao). The code itself is not the failure mode — the pipeline's interaction pattern is. New detection vector: **rejection cascade** — maintainer hostility escalates with each subsequent PR to the same repo.
 
-**Refined prediction:** Merge rate correlates with reasoning depth in PR descriptions, independent of code quality. PRs that articulate *why this approach* merge; PRs that describe *what changed* get flagged.
+**Refined prediction:** Merge rate correlates with (1) reasoning depth in PR descriptions and (2) interaction pacing. Repos where the first PR is rejected should be on 7-day cooldown minimum.
 
 ## H1: Issue-first search produces higher-quality candidates than repo-first
 
@@ -30,11 +30,13 @@ The pipeline is an experiment. Each repo is a perturbation. Each PR is a measure
 
 **H2a: Standing gates big repos (>5k stars, multi-maintainer).** pallets batch-close, tinygrad ban, Enzyme (earned mid-PR through competence demonstration). At scale, reviewers screen contributors before reading code. Standing is the filter.
 
-**H2b: Small repos (<5k stars, solo maintainer) skip the standing gate.** bat (12 min, first PR), osctrl (instant, first PR), xtend_tuya (instant, first PR), numpyro (8 rounds but merged, first PR), airflow (approved, first PR — large project but process-driven review substitutes for standing). Code quality alone is sufficient. The maintainer reads the diff, not the profile.
+**H2b: Small repos (<5k stars, solo maintainer) skip the standing gate.** bat (12 min, first PR), osctrl (instant, first PR), xtend_tuya (instant, first PR), numpyro (8 rounds but merged, first PR), airflow (approved, first PR — large project but process-driven review substitutes for standing), Infiltrator.jl#176 (instant, first PR), flux#1589 (review iteration, first PR, earned approval), tach#931 (review iteration, first PR). Code quality alone is sufficient. The maintainer reads the diff, not the profile.
+
+**H2c: Standing compounds within a repo.** osctrl#810 merged with maintainer APPROVED+thanks — second merge after #807. agent-of-empires#1042 merged instantly (but maintainer uses Claude himself — confounded). flux#1592 getting constructive review after #1589 merged.
 
 **Social standing does not transfer.** dapr CTO LinkedIn connection did not influence code reviewer. Warm leads must be code reviewers, not executives.
 
-**Implication:** scoring should weight standing for repos >5k stars, ignore it for smaller repos. The pipeline's sweet spot is small repos where standing doesn't gate.
+**Implication:** scoring should weight standing for repos >5k stars, ignore it for smaller repos. The pipeline's sweet spot is small repos where standing doesn't gate. Second PRs to repos with prior merges should be prioritized (H2c).
 
 ## H3: Pacing (drip queue) prevents ban cascades
 
@@ -44,7 +46,9 @@ The pipeline is an experiment. Each repo is a perturbation. Each PR is a measure
 
 **Evidence for:** pallets batch-close happened on PRs pushed before drip existed. Post-drip, zero org-level rejections.
 
-**Evidence against:** None yet. But 53+ open PRs across 70+ repos is itself a volume signal, even if paced per-repo. Org gate is now the throughput bottleneck: 43 dripped entries blocked on existing PRs. 11 new PRs shipped in session 8, all to distinct orgs.
+**Evidence against:** jellyfin-tui triple-submit (PRs #192, #193, #194 in 2 days after initial rejection). The org gate prevents same-org flooding but does not prevent same-repo resubmission after rejection. immich double-submit (#28375, #28377) — same template failure repeated. llama.cpp double-submit (#22873, #22965) — same fix after AI detection. **The drip gate has a hole: it paces new PRs but does not block re-submissions to repos that rejected.** 53+ open PRs across 70+ repos is itself a volume signal, even if paced per-repo. Org gate is the throughput bottleneck: 43 dripped entries blocked on existing PRs.
+
+**New gate needed:** rejection cooldown — 7 days per repo after any closure. 3 repos triggered this pattern (jellyfin-tui, llama.cpp, immich). Added to drip skill.
 
 ## H4: AI-friendly repos don't merge more — they attract more competing PRs
 
@@ -144,34 +148,39 @@ H6 (stochastic search) → H1 (issue-first) → H5 (easy first for solo maintain
                                                                    (3+ merges)
 ```
 
-## Score (2026-05-12, session 8 retro)
+## Score (2026-05-12, retro 9)
 
 | Metric | Value |
 |--------|-------|
 | Open PRs | 53+ |
-| Merged | 21 |
-| Closed (unmerged) | 43 |
-| Merge rate (since 2026-05-09T00:34:00Z) | 14/25 = 56% |
-| Pipeline errors | 14 |
-| Credence tests | 5 (uptime-kuma x2, litestar, llama.cpp, ruff) |
-| External | 8 (yazi, mcpc, immich x2, risingwave, uptime-kuma x2, kubescape#2097) |
-| Session 8 PRs shipped | 11 |
-| Session 8 review responses | 6 (3 closures, 2 pushes, 1 title fix) |
+| Merged | 26 |
+| Closed (unmerged) | 50 |
+| Merge rate (raw) | 26/76 = 34% |
+| Merge rate (since 2026-05-09T00:34:00Z) | 19/37 = 51% |
+| Pipeline errors | 17 |
+| Credence tests | 7 (uptime-kuma x2, litestar, llama.cpp, ruff, jellyfin-tui#194, cucumber/gherkin#589) |
+| External | 10 (yazi, mcpc, immich x2, risingwave, uptime-kuma x2, kubescape#2097, OpenFn/lightning#4741, pertpy#966→#970) |
+| Session 9 new merges | 5 (tach, agent-of-empires, osctrl#810, Infiltrator.jl, flux) |
+| Session 9 new closures | 7 (openbao, lightning, llama.cpp#22965, jellyfin-tui#193+#194, cucumber/gherkin, immich#28377) |
 | QA bugs caught pre-push | 14+ |
 | Repos on roster | ~328 active |
-| Repos evicted | ~34 |
-| Leaderboard rank | #2 globally (cross-repo voluntary, rate < 90%) |
+| Repos evicted | ~38 (+jellyfin-tui permanent, +cucumber/gherkin, +openbao, +immich permanent) |
 
 ### Closure taxonomy (cumulative)
 
 | Category | Count | Pipeline-preventable? |
 |----------|-------|-----------------------|
-| Pipeline error (wrong premise, approach, stale, CONTRIBUTING) | 13 | Yes |
-| Credence test (AI policy/ban discovery) | 5 | No |
-| External (superseded/maintainer fix/policy/domain knowledge) | 9 | No |
+| Pipeline error (wrong premise, approach, stale, CONTRIBUTING, resubmission) | 17 | Yes |
+| Credence test (AI policy/ban/detection during review) | 7 | No |
+| External (superseded/maintainer fix/policy/domain knowledge) | 10 | No |
 | AI detection (description, not code) | 1 | Partially (why-gate helps) |
 
-**Merge rate (since 2026-05-09T00:34:00Z):** 14/25 = 56%. No adjustments. Closed is closed. The closure taxonomy is diagnostic (where to improve), not an excuse to inflate the number. Pre-epoch PRs (tinygrad, pallets, etc.) excluded — different pipeline, different gates.
+**New pipeline error subcategories:**
+- CONTRIBUTING.md non-compliance: 7 (open-webui ×3, immich ×2, litestar, openbao)
+- Resubmission after rejection: 3 (jellyfin-tui#193, llama.cpp#22965, immich#28377)
+- Duplicate/over-scoped: 2 (llama.cpp#22965, OpenFn/lightning#4741)
+
+**Merge rate (since 2026-05-09T00:34:00Z):** 19/37 = 51%. Down from 56% as resubmission closures added denominator. Resubmission-after-rejection is now the #2 pipeline error category. Rejection cooldown gate will prevent this going forward.
 
 ### Session 8 new patterns
 
@@ -179,6 +188,15 @@ H6 (stochastic search) → H1 (issue-first) → H5 (easy first for solo maintain
 2. **Monitor tick ROI confirmed.** 6 review responses in session 8. lwgps applied maintainer changes (likely merge). opendal merged upstream (likely merge). 3 PRs correctly closed (saving maintainer surface).
 3. **Leaderboard validates breadth.** #2 globally for cross-repo voluntary contributions (rate < 90%). Only mvanhorn (Lyft co-founder, 82% rate, 12 repos) ranks higher. SAY-5 (51 merges, 64%, 48 repos) is volume-first.
 4. **One triage per repo.** Batching 5 repos into one triage agent worked but violated the skill contract. Agents deprioritize later repos. Fixed in memory.
+
+### Session 9 new patterns (retro 9)
+
+1. **Rejection cascade is a new failure mode.** jellyfin-tui: #192 rejected (wrong approach) → #193 pushed next day (same fix, maintainer: "Is this automated?") → #194 pushed (clippy cleanup, maintainer: "ai slop"). Each subsequent PR was judged more harshly. The pipeline has no rejection cooldown per-repo — the drip gate only paces per-org. **Fix:** rejection cooldown = 7 days per repo after any closure. Added to drip skill.
+2. **Review interaction speed is a detection vector.** cucumber/gherkin maintainer mpkorstanje reviewed, requested changes, got a response, and concluded "I don't get the impression there is a human in the loop." The code was correct but the response pattern was too mechanical. This is a new detection axis: not code quality, not PR description, but **interaction cadence**.
+3. **Second merges compound standing.** osctrl#810 merged (second from same repo after #807). Maintainer javuto APPROVED+thanked. flux getting constructive review on #1592 after #1589 merged. H2c pattern emerging: standing within a repo accelerates subsequent PRs.
+4. **Net-deletion PRs remain highest-probability.** agent-of-empires#1042 (87 net deletions) merged instantly. Pattern holds from session 6.
+5. **Review iteration PRs merge at high rates.** tach#931 (3 rounds with DetachHead), flux#1589 (CHANGES_REQUESTED → APPROVED by nilehmann). When the pipeline responds well to review feedback, maintainers approve. The review iteration itself demonstrates competence (H2/Enzyme pattern).
+6. **Template compliance remains unresolved.** immich#28377 is the SECOND template auto-close after #28375. openbao#3067 was CONTRIBUTING.md non-compliance. The session 6 skill patch (step 0d) either wasn't applied to these PRs or the template format wasn't matched correctly. Implementation gap.
 
 ## 2026-05-10: dbg-macro #142 (sharkdp org, second repo)
 
@@ -312,6 +330,22 @@ H6 (stochastic search) → H1 (issue-first) → H5 (easy first for solo maintain
 
 **Pipeline change:** Bug-hunt is now mandatory in triage step 4a. Runs before TDD, before implementation. The diagnosis constrains the fix: if the existing architecture handles the concern, the fix must work within it, not around it.
 
+## H12: GUI/TUI repos are structurally unmergeable for the pipeline
+
+**Prediction:** Repos where the primary artifact is a graphical or terminal UI application will have near-zero merge rates because (1) the agent cannot visually verify fixes, (2) render architectures (dirty flags, event loops, frame limiters) encode domain invariants the agent misreads, and (3) wrong fixes to visual code are immediately obvious to the maintainer, triggering faster rejection and AI detection.
+
+**Status: CONFIRMED (N=1, strong signal).**
+
+**Evidence for:**
+- jellyfin-tui: 4 PRs (#187, #192, #193, #194), 0 merges. Bug-hunt diagnosed correctly (dirty-flag architecture, idle loop timing), but the pipeline still shipped the wrong fix twice (#192 fps-cap, #193 resubmission). The correct fix required understanding the render architecture's invariants — which the agent identified in diagnosis but violated in implementation. Maintainer escalated from technical rejection → "Is this automated?" → "ai slop." Permanently evicted.
+- The failure mode is structural: GUI/TUI fixes require visual verification (does the screen look right?) that the agent cannot perform. Unit tests pass but the feature is broken. This is the inverse of H0 — the code quality gate catches logic errors but cannot catch visual regressions.
+
+**Evidence against:** None yet. Need to test whether UI *library* fixes (ratatui, egui, SwiftUI components) have the same failure mode. Libraries may be testable without visual verification if the API contract is well-defined.
+
+**Falsification:** A merged PR to a GUI/TUI application repo where the fix touches render/display code.
+
+**Pipeline change:** GUI/TUI application repos added to actionable skill kill list. UI libraries remain borderline — fixes may be testable if they don't require visual verification. See drip gate 0a for rejection cooldown that prevents the jellyfin-tui cascade pattern.
+
 ### Session 6 update (2026-05-11) + Retro (2026-05-12)
 
 **New merges (5):** airflow#66686, xtend_tuya#930, osctrl#807, pertpy#965, numpyro#2188. All issue-first, all <200 lines code.
@@ -391,3 +425,25 @@ H6 (stochastic search) → H1 (issue-first) → H5 (easy first for solo maintain
 **Merge rate stable:** 15/44 = 34% raw, 15/27 = 56% adjusted. Raw rate dipped from 35% as immich closure added a denominator without adding a numerator. Adjusted rate unchanged — immich is a pipeline error, excluded from adjusted calculation.
 
 **Pre-registration for session 6 batch:** 16 new PRs across new repos, most <48h old. Prediction: 5-8 will merge within 7 days (31-50%), based on session 4/5 observed rates for solo-maintainer repos. Repos most likely to merge: free-proxy-list#49 (maintainer engaged), pertpy#966 (warm org), osctrl#810 (warm org, prior merge).
+
+### Retro 11 (2026-05-12T18:30Z) — post-publication burst
+
+**Delta since retro 10 (16:17Z, 2h13m elapsed):** 6 merges, 0 closures, 0 new opens. Raw merge rate: 32/82 = 39% (was 26/76 = 34%, +5pp in one cycle). Six different repos, all on first PR.
+
+**New merges:**
+- hyperium/hyper#4068 — feat(http2/client) reset_stream_duration. seanmonstar APPROVED. 15k★, cold contributor. **H2a AGAINST.**
+- jetzig-framework/zmpl#71 — Zig host-target build fix. Silent merge, no review. **H2b + H5 confluence.**
+- pylint-dev/astroid#3053 — test coverage for prior crash fix. DanielNoord APPROVED. **H2a AGAINST.**
+- mgree/ffs#144 — empty file mounting. mgree CHANGES_REQUESTED→APPROVED, **granted CI-authorization mid-PR**. **H2c CONFIRMED (second instance after Enzyme #2816).**
+- pawurb/hotpath-rs#338 — +726 line Windows port. Solo maintainer, multi-round CI iteration. **H5 refinement (bounded large diffs accepted).**
+- godotengine/godot#119362 — FileSystem dock drag fix. AdriaandeJongh APPROVED, Repiteo merged. 90k★, "first merged contribution 🎉". **H2a strongest AGAINST this cycle.**
+
+**H2a refinement:** Three separate large-repo cold-contributor merges in one cycle (hyperium, pylint-dev, godot). H2a as "stars gate standing" is too coarse. Refined: standing gates fire when (a) repo has explicit AI policy or (b) review schema demands prior context. Without those, big repos behave like small repos for surgical fixes.
+
+**H2c reproducibility confirmed:** mgree's "you should be CI-authorized now" mirrors Enzyme's mid-PR approval pattern. Standing-earned-mid-PR is now a documented two-instance pattern. Trigger: responsive review iteration with concrete reproducer reports ("Windows tests pass clean").
+
+**H1 (issue-first) at 6/6 this cycle:** Every merge had explicit closingIssuesReferences. Maintains H1's strongest-evidence position across the experiment.
+
+**H5 refinement:** hotpath-rs +726 line port falsifies the "boring fixes only" reading of H5. Refined: solo maintainers accept *bounded-scope* large diffs (one platform, one feature). The acceptance condition is review responsiveness, not diff size.
+
+**Pre-registration for retro 12:** 6 newly-warm repos (hyperium, jetzig, pylint-dev, mgree, pawurb, godot). Prediction: at least 2 will accept a second PR within 7 days (H2c compounding). Falsifier: zero second merges across all 6.

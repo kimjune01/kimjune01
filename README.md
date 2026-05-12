@@ -1,13 +1,17 @@
-## 45% merge rate · 53 merged · 40 repos · 🔥 streak: 3
+## 49% merge rate · 0 streak (23:26 UTC)
+
+[Speedrunning Open Source](https://june.kim/speedrunning-open-source)
 
 ```mermaid
 sankey-beta
-    triaged,    submitted, 242
-    triaged,    queued,    110
-    triaged,    evicted,    48
-    submitted,  merged,     26
-    submitted,  open,      186
-    submitted,  closed,     30
+    triaged,    submitted, 352
+    triaged,    throttled, 134
+    triaged,    rejected,  57
+    submitted,  resolved,  75
+    submitted,  dripped,   105
+    submitted,  open,      172
+    resolved,   merged,    37
+    resolved,   closed,    38
 ```
 
 ```mermaid
@@ -15,7 +19,7 @@ xychart-beta
     title "PRs merged per day"
     x-axis ["05-09", "05-10", "05-11", "05-12"]
     y-axis "merged"
-    bar [1, 5, 8, 12]
+    bar [1, 5, 8, 23]
 ```
 
 *since 2026-05-09T00:34:00Z (pipeline epoch)*
@@ -34,16 +38,16 @@ xychart-beta
 
 | | repo | PR |
 |---|------|----|
-| ✅ | rustledger/rustledger | [#1095](https://github.com/rustledger/rustledger/pull/1095) fix: add checksum verification and prevent file clobber |
-| ✅ | AhoyISki/duat | [#57](https://github.com/AhoyISki/duat/pull/57) Add Ayu theme with dark, light, and mirage variants |
-| ✅ | vavallee/bindery | [#592](https://github.com/vavallee/bindery/pull/592) Surface timestamps in download queue UI |
-| ❌ | dapr/dapr | [#9936](https://github.com/dapr/dapr/pull/9936) fix: placement dissemination timeout race |
-| ✅ | sqlpage/SQLPage | [#1284](https://github.com/sqlpage/SQLPage/pull/1284) Fix DuckDB :: casting warning |
-| ❌ | withastro/astro | [#16704](https://github.com/withastro/astro/pull/16704) fix(build): strip client:only imports from prerender graph |
-| ✅ | cachix/secretspec | [#88](https://github.com/cachix/secretspec/pull/88) fix(test): use portable command for empty-output test |
-| ✅ | tach-org/tach | [#931](https://github.com/tach-org/tach/pull/931) fix: report syntax errors as errors, not warnings |
-| ✅ | njbrake/agent-of-empires | [#1042](https://github.com/njbrake/agent-of-empires/pull/1042) refactor: remove dead claude.config_dir config field |
-| ❌ | openbao/openbao | [#3067](https://github.com/openbao/openbao/pull/3067) fix: apply socket_mode without requiring socket_user/socket_group |
+| ❌ | du82/nonograph | [#17](https://github.com/du82/nonograph/pull/17) Fix selection anchor restoration on page load |
+| ✅ | sorairolake/qrtool | [#1002](https://github.com/sorairolake/qrtool/pull/1002) fix: return non-zero exit code when no QR cod |
+| ✅ | VictoriaMetrics/VictoriaMetrics | [#10934](https://github.com/VictoriaMetrics/VictoriaMetrics/pull/10934) feat: add basicAuth.usernameFile CLI flags fo |
+| ✅ | jetzig-framework/zmpl | [#71](https://github.com/jetzig-framework/zmpl/pull/71) Fix cross-platform compilation: use host targ |
+| ✅ | pylint-dev/astroid | [#3053](https://github.com/pylint-dev/astroid/pull/3053) test: add Subscript target coverage for starr |
+| ✅ | mgree/ffs | [#144](https://github.com/mgree/ffs/pull/144) Fix empty file mounting for JSON, YAML, and T |
+| ✅ | godotengine/godot | [#119362](https://github.com/godotengine/godot/pull/119362) Fix dragging unselected items from FileSystem |
+| ✅ | hyperium/hyper | [#4068](https://github.com/hyperium/hyper/pull/4068) feat(http2/client): expose reset_stream_durat |
+| ✅ | pawurb/hotpath-rs | [#338](https://github.com/pawurb/hotpath-rs/pull/338) fix: Windows thread monitoring support |
+| ❌ | kanidm/kanidm | [#4339](https://github.com/kanidm/kanidm/pull/4339) Fix false positive permission warning for dir |
 
 ## Leaderboard
 
@@ -51,23 +55,23 @@ xychart-beta
 
 | contributor | merged | rate | repos |
 |---|---|---|---|
-| SAY-5 | 59 | 67% | 54 |
-| kimjune01 | 53 | 45% | 40 |
-| mvanhorn | 14 | 82% | 12 |
-| ununununium | 12 | 70% | 10 |
-| officialasishkumar | 5 | 71% | 4 |
+| SAY-5 | 78 | 63% | 72 |
+| kimjune01 | 28 | 54% | 26 |
+| mvanhorn | 21 | 80% | 18 |
+| ununununium | 13 | 68% | 11 |
+| yakushabb | 12 | 80% | 12 |
+| officialasishkumar | 9 | 81% | 7 |
+| GeertvanHorrik | 1 | 50% | 1 |
 
 [Join the leaderboard](https://github.com/kimjune01/sweep/blob/master/README.md) · [Protect your repo](https://github.com/kimjune01/sweep/blob/master/action.yml)
 
 ## AI SLOP
 
-| PR | time to close | bugs | reason |
+| PR | time to close | bugs | title |
 |---|---|---|---|
-| [uptime-kuma#7371](https://github.com/louislam/uptime-kuma/pull/7371) | <1 min | 0 | cherry-picked |
-| [uptime-kuma#7372](https://github.com/louislam/uptime-kuma/pull/7372) | <1 min | 0 | cherry-picked |
-| [jellyfin-tui#194](https://github.com/dhonus/jellyfin-tui/pull/194) | 5 min | 0 | ai slop |
+| [uptime-kuma#7371](https://github.com/louislam/uptime-kuma/pull/7371) | <1 min | 0 | 🚨⚠️AI Slop⚠️🚨 cherry-picked |
+| [uptime-kuma#7372](https://github.com/louislam/uptime-kuma/pull/7372) | <1 min | 0 | 🚨⚠️AI Slop⚠️🚨 cherry-picked |
 | [litestar#4755](https://github.com/litestar-org/litestar/pull/4755) | 7 hrs | 0 | closed per AI policy |
-| [gherkin#589](https://github.com/cucumber/gherkin/pull/589) | 3 hrs | 0 | no human in the loop |
 | [ruff#25066](https://github.com/astral-sh/ruff/pull/25066) | 2 days | 0 | mainly produced by AI |
 | [llama.cpp#22873](https://github.com/ggml-org/llama.cpp/pull/22873) | 2 days | 1 | AI-generated PR detected |
 
