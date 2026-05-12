@@ -23,10 +23,15 @@ sankey-beta
 - [llama.cpp#22873](https://github.com/ggml-org/llama.cpp/pull/22873)
 - [litestar#4755](https://github.com/litestar-org/litestar/pull/4755)
 
+<details>
+<summary>verify</summary>
+
 ```graphql
 { merged: search(query: "is:pr is:merged author:kimjune01 created:>2026-05-09", type: ISSUE) { issueCount }
   closed: search(query: "is:pr is:closed is:unmerged author:kimjune01 created:>2026-05-09", type: ISSUE) { issueCount } }
 ```
+
+</details>
 
 ## Writing
 
