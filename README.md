@@ -1,25 +1,21 @@
 # June Kim
 
-## 9 merged across 9 repos — 64% merge rate · 1 streak (01:17 UTC)
+## 9 merged across 9 repos — 64% merge rate · 1 streak (01:19 UTC)
 
 ```mermaid
 sankey-beta
-    triaged, qa_passed, 46
+    triaged, submitted, 82
+    triaged, queued, 149
     triaged, gate_fail, 7
-    qa_passed, dripped, 30
-    qa_passed, org_blocked, 16
-    dripped, merged, 9
-    dripped, closed, 5
+    submitted, resolved, 14
+    submitted, open, 38
+    submitted, dripped, 30
+    resolved, merged, 9
+    resolved, closed, 0
+    resolved, 🚨AI Slop🚨, 5
 ```
 
-*since 2026-05-09 (pipeline epoch)*
-
-🚨⚠️AI Slop⚠️🚨
-- [uptime-kuma#7371](https://github.com/louislam/uptime-kuma/pull/7371)
-- [uptime-kuma#7372](https://github.com/louislam/uptime-kuma/pull/7372)
-- [ruff#25066](https://github.com/astral-sh/ruff/pull/25066)
-- [llama.cpp#22873](https://github.com/ggml-org/llama.cpp/pull/22873)
-- [litestar#4755](https://github.com/litestar-org/litestar/pull/4755)
+*since 2026-05-09 (pipeline epoch)* · slop: [uptime-kuma](https://github.com/louislam/uptime-kuma/pull/7371) · [ruff](https://github.com/astral-sh/ruff/pull/25066) · [llama.cpp](https://github.com/ggml-org/llama.cpp/pull/22873) · [litestar](https://github.com/litestar-org/litestar/pull/4755)
 
 ```graphql
 { merged: search(query: "is:pr is:merged author:kimjune01 created:>2026-05-09", type: ISSUE) { issueCount }
