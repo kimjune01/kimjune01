@@ -1,4 +1,4 @@
-## 45% merge rate · 1 streak (01:51 UTC)
+## 45% merge rate · 1 streak (01:53 UTC)
 
 ```mermaid
 sankey-beta
@@ -46,10 +46,6 @@ sankey-beta
 
 </details>
 
-## Writing
-
-[june.kim](https://june.kim)
-
 ---
 
-Build in public. AGPL where it matters. Questions? june@june.kim
+[june.kim](https://june.kim) · AGPL where it matters · june@june.kim
