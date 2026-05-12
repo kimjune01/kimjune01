@@ -1,4 +1,4 @@
-## 45% merge rate · 1 streak (01:59 UTC)
+## 45% merge rate · 1 streak (02:00 UTC)
 
 ```mermaid
 sankey-beta
@@ -41,13 +41,13 @@ sankey-beta
 
 ## 🚨⚠️AI Slop⚠️🚨
 
-| PR | time to close | bugs | notes |
+| PR | time to close | bugs | title |
 |---|---|---|---|
-| [uptime-kuma#7371](https://github.com/louislam/uptime-kuma/pull/7371) | <1 min | 0 | cherry-picked |
-| [uptime-kuma#7372](https://github.com/louislam/uptime-kuma/pull/7372) | <1 min | 0 | cherry-picked |
-| [litestar#4755](https://github.com/litestar-org/litestar/pull/4755) | 7 hrs | 0 | 100% test coverage |
-| [ruff#25066](https://github.com/astral-sh/ruff/pull/25066) | 2 days | 0 | lacked rationale |
-| [llama.cpp#22873](https://github.com/ggml-org/llama.cpp/pull/22873) | 2 days | 1 | automated checker |
+| [uptime-kuma#7371](https://github.com/louislam/uptime-kuma/pull/7371) | <1 min | 0 | 🚨⚠️AI Slop⚠️🚨 cherry-picked |
+| [uptime-kuma#7372](https://github.com/louislam/uptime-kuma/pull/7372) | <1 min | 0 | 🚨⚠️AI Slop⚠️🚨 cherry-picked |
+| [litestar#4755](https://github.com/litestar-org/litestar/pull/4755) | 7 hrs | 0 | closed per AI policy |
+| [ruff#25066](https://github.com/astral-sh/ruff/pull/25066) | 2 days | 0 | mainly produced by AI |
+| [llama.cpp#22873](https://github.com/ggml-org/llama.cpp/pull/22873) | 2 days | 1 | AI-generated PR detected |
 
 [hypothesis graph](HYPOTHESIS_GRAPH.md)
 
