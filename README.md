@@ -1,4 +1,4 @@
-## 45% merge rate · 1 streak (01:55 UTC)
+## 45% merge rate · 1 streak (01:59 UTC)
 
 ```mermaid
 sankey-beta
@@ -40,11 +40,14 @@ sankey-beta
 | ✅ | GreptimeTeam/greptimedb | [#8092](https://github.com/GreptimeTeam/greptimedb/pull/8092) fix: remove unparsed [heartbeat] sections fro |
 
 ## 🚨⚠️AI Slop⚠️🚨
-- [uptime-kuma#7371](https://github.com/louislam/uptime-kuma/pull/7371)
-- [uptime-kuma#7372](https://github.com/louislam/uptime-kuma/pull/7372)
-- [ruff#25066](https://github.com/astral-sh/ruff/pull/25066)
-- [llama.cpp#22873](https://github.com/ggml-org/llama.cpp/pull/22873)
-- [litestar#4755](https://github.com/litestar-org/litestar/pull/4755)
+
+| PR | time to close | bugs | notes |
+|---|---|---|---|
+| [uptime-kuma#7371](https://github.com/louislam/uptime-kuma/pull/7371) | <1 min | 0 | cherry-picked |
+| [uptime-kuma#7372](https://github.com/louislam/uptime-kuma/pull/7372) | <1 min | 0 | cherry-picked |
+| [litestar#4755](https://github.com/litestar-org/litestar/pull/4755) | 7 hrs | 0 | 100% test coverage |
+| [ruff#25066](https://github.com/astral-sh/ruff/pull/25066) | 2 days | 0 | lacked rationale |
+| [llama.cpp#22873](https://github.com/ggml-org/llama.cpp/pull/22873) | 2 days | 1 | automated checker |
 
 [hypothesis graph](HYPOTHESIS_GRAPH.md)
 
