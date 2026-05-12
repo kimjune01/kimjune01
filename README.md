@@ -8,8 +8,8 @@ sankey-beta
     triaged, queued, 149
     triaged, gate_fail, 7
     submitted, resolved, 14
-    submitted, open, 38
     submitted, dripped, 30
+    submitted, open, 38
     resolved, merged, 9
     resolved, closed, 5
 ```
