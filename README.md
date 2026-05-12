@@ -1,13 +1,13 @@
 # June Kim
 
-## 15 merged across 15 repos — 27% merge rate
+## 15 merged across 15 repos — 27% merge rate (01:13 UTC)
 
 ```mermaid
 sankey-beta
-    triaged, qa_passed, 41
+    triaged, qa_passed, 44
     triaged, gate_fail, 7
     qa_passed, dripped, 28
-    qa_passed, org_blocked, 13
+    qa_passed, org_blocked, 16
     dripped, merged, 15
     dripped, closed, 40
 ```
