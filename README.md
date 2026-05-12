@@ -1,12 +1,12 @@
-## 46% merge rate · 2 streak (07:37 UTC)
+## 46% merge rate · 2 streak (08:04 UTC)
 
 ```mermaid
 sankey-beta
-    triaged,    submitted, 280
-    triaged,    throttled, 162
-    triaged,    rejected,  20
+    triaged,    submitted, 285
+    triaged,    throttled, 160
+    triaged,    rejected,  21
     submitted,  resolved,  43
-    submitted,  dripped,   75
+    submitted,  dripped,   80
     submitted,  open,      162
     resolved,   merged,    20
     resolved,   closed,    23
@@ -49,20 +49,15 @@ xychart-beta
 
 ## Leaderboard
 
-*voluntary contributions to repos you don't own, since epoch | [29 repos sampled](https://github.com/kimjune01/kimjune01)*
+*voluntary contributions to repos you don't own | rate < 90% (humans only) | [methodology](https://github.com/kimjune01/kimjune01)*
 
 | contributor | merged | rate | repos |
 |---|---|---|---|
-| camc314 | 14 | 93% | 1 |
-| kimjune01 | 14 | 56% | 15 |
-| lukasmasuch | 8 | 100% | 1 |
-| chenyuxyz | 7 | 100% | 1 |
-| jscheffl | 6 | 100% | 1 |
-| huang-julien | 5 | 83% | 1 |
-| ryantxu | 5 | 50% | 1 |
-| marxin | 4 | 100% | 1 |
-| sirhcm | 4 | 100% | 1 |
-| ColtenOuO | 4 | 100% | 1 |
+| SAY-5 | 52 | 65% | 49 |
+| mvanhorn | 14 | 82% | 12 |
+| kimjune01 | 14 | 56% | 14 |
+| ununununium | 11 | 68% | 9 |
+| officialasishkumar | 4 | 66% | 3 |
 
 ## AI SLOP
 
