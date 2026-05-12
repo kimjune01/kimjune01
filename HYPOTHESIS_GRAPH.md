@@ -304,3 +304,47 @@ H6 (stochastic search) → H1 (issue-first) → H5 (easy first for solo maintain
 3. **QA gate ROI confirmed.** pertpy merged after QA caught 6 bugs. 13 total bugs caught pre-push across pipeline (7 session-4 + 6 pertpy).
 4. **Pre-registration accuracy is 83%** (5/6). The miss: dapr — social warm lead predicted merge, code reviewer rejected on design intent.
 5. **Pipeline errors are the biggest drag.** 11 of 28 closures are pipeline errors. Adjusted rate without them is 56%. The three new errors are all preventable: bug-hunt would catch jellyfin-tui, staleness check would catch ballista, design-intent probe would catch dapr.
+
+### Session 6 update (2026-05-12)
+
+**New merges (2):** rustledger#1094 (gitleaks binary swap), pertpy#965 (multicomparison figsize fix from session 5 landing).
+
+**Running total: 15 merged / 33 resolved = 45% merge rate (post-epoch).**
+
+**H0 evidence:**
+- FOR: rustledger (solo maintainer, 242★, CI fix merged same day). QA caught file clobber + no checksum — would have been rejected without gate.
+- FOR: 3 approved PRs pending merge (godot#119362, servo#44846, opendal#7513). Pipeline producing merge-ready PRs.
+- AGAINST: immich#28375 closed — AI policy in CONTRIBUTING.md not caught pre-triage. Pipeline error, not code quality.
+
+**H1 evidence:**
+- FOR: All session 6 triage came from actionable search (issue-first). 27 new repos triaged, 8 evicted (HostlistsRegistry content repo, jwt-cli stale PRs, abtop competing PRs, hyundai-kia no bugs, ida-mcp-rs too-fast maintainer, ytmusic-deleter AI-hostile, immich AI policy, openbao certification).
+- Eviction rate 30% — higher than session 5's 20%. The 200-500 star bucket produces more candidates but also more misses.
+
+**H2 evidence:**
+- FOR: flux#1592 got constructive review (nilehmann asked for allocation fix, not rejection). Second PRs get technical feedback. Standing transfers within org.
+- FOR: free-proxy-list#49 maintainer responded "Good job 👍" and asked for sourcery review follow-up. Engagement within hours.
+
+**H3 evidence:**
+- FOR: Org gate enforced at 1 PR per org. 20 shipped PRs, all in different orgs. Zero ban events.
+- NEW: Org gate is now the throughput bottleneck, not quality. 86 QA'd entries waiting for existing PRs to resolve.
+
+**H5 evidence:**
+- FOR: Solo maintainer repos in 200-500 star range: rustledger (instant merge), free-proxy-list (engaged), cackle (queued). Pattern holds.
+- AGAINST: jwt-cli (solo maintainer, 255★) evicted — 7 stale PRs despite "happy to review." PR age distribution is acceptance signal, not stated intent.
+- NEW LESSON: Fast maintainers (ida-mcp-rs, 24-48hr fix cycle) leave no contribution surface. The sweet spot is overwhelmed maintainers with backlogs, not responsive ones.
+
+**H7 evidence (new):**
+- FOR: AI policy pre-check identified 6 repos with anti-AI policies. Credence tests complete — uptime-kuma (label), llama.cpp (automated), litestar (AI_POLICY.md), immich (CONTRIBUTING.md), openbao (certification), ytmusic-deleter (comment).
+- KEY FINDING: 80% of "AI slop" rejections were policy-based, not quality-based. QA found 0 bugs on 4/5 slop-labeled PRs. uptime-kuma cherry-picked the rejected code.
+
+**QA gate data:**
+- Session 6 QA caught bugs on 60%+ of branches
+- Critical catches: pytorch (shape guard, memory budget 6x), envoy (monotonic/system time mismatch), astro compiler (import stripping OOB), amsynth (double-free, use-after-free)
+- QA attestation enforcement: 18 dripped-without-QA entries recycled. Routing bug fixed (queued→triaged vocabulary rename across 39 occurrences in 6 skills).
+- Opus QA > sonnet QA > haiku QA. Model quality directly maps to false positive rate. Haiku agents spun on already-QA'd repos.
+
+**Pipeline infrastructure:**
+- tick.py: horizontal bucket chain with ⚡/■ markers, CPU monitoring, auto-drip, 🔴 ACTION lines
+- Profile README: live sankey, feed table, hypothesis graph, slop table with time-to-close
+- Concurrency ceiling: 20 opus agents = CPU 100%. Sustained: 15 agents.
+- JSONL key normalization: int→string fix resolved phantom triaged inflation (190→126).
