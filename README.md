@@ -1,15 +1,22 @@
-## 45% merge rate · 1 streak (05:25 UTC)
+## 47% merge rate · 1 streak (05:58 UTC)
 
 ```mermaid
 sankey-beta
-    triaged,    submitted, 194
-    triaged,    throttled, 174
-    triaged,    rejected,  11
-    submitted,  resolved,  35
-    submitted,  dripped,   41
-    submitted,  open,      118
-    resolved,   merged,    16
-    resolved,   closed,    19
+    triaged,    submitted, 258
+    triaged,    throttled, 188
+    triaged,    rejected,  18
+    submitted,  resolved,  38
+    submitted,  dripped,   76
+    submitted,  open,      144
+    resolved,   merged,    18
+    resolved,   closed,    20
+```
+
+```mermaid
+xychart-beta
+    x-axis ["05-09", "05-10", "05-11", "05-12"]
+    y-axis "merged" 0 --> 20
+    line [1, 6, 14, 18]
 ```
 
 *since 2026-05-09T00:34:00Z (pipeline epoch)*
@@ -28,6 +35,9 @@ sankey-beta
 
 | | repo | PR |
 |---|------|----|
+| ✅ | aymericzip/intlayer | [#427](https://github.com/aymericzip/intlayer/pull/427) Fix logo animation positioning for RTL langua |
+| ❌ | dhonus/jellyfin-tui | [#193](https://github.com/dhonus/jellyfin-tui/pull/193) fix: reduce CPU usage with frame limiter |
+| ✅ | kubescape/kubescape | [#2076](https://github.com/kubescape/kubescape/pull/2076) fix: strip URI prefix before splitting in Rea |
 | ✅ | chojs23/concord | [#45](https://github.com/chojs23/concord/pull/45) fix: align cursor position with newline-aware |
 | ❌ | immich-app/immich | [#28377](https://github.com/immich-app/immich/pull/28377) fix(web): add focus-visible outlines to sideb |
 | ❌ | immich-app/immich | [#28375](https://github.com/immich-app/immich/pull/28375) fix(web): add focus-visible outlines to sideb |
@@ -35,9 +45,6 @@ sankey-beta
 | ✅ | jmpsec/osctrl | [#807](https://github.com/jmpsec/osctrl/pull/807) Fix OSX quick-enroll: stop osqueryd before un |
 | ❌ | ggml-org/llama.cpp | [#22873](https://github.com/ggml-org/llama.cpp/pull/22873) server : fix n_predict=-2 (generate until con |
 | ❌ | dhonus/jellyfin-tui | [#192](https://github.com/dhonus/jellyfin-tui/pull/192) fix: reduce idle CPU usage with frame rate li |
-| ✅ | scverse/pertpy | [#965](https://github.com/scverse/pertpy/pull/965) Fix plot_multicomparison_fc ValueError with d |
-| ✅ | azerty9971/xtend_tuya | [#930](https://github.com/azerty9971/xtend_tuya/pull/930) Fix battery device class ambiguity for generi |
-| ❌ | dapr/dapr | [#9924](https://github.com/dapr/dapr/pull/9924) refactor: simplify workflow concurrency confi |
 
 ## AI SLOP
 
