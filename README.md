@@ -1,12 +1,12 @@
-## 47% merge rate · 1 streak (06:01 UTC)
+## 47% merge rate · 1 streak (06:02 UTC)
 
 ```mermaid
 sankey-beta
-    triaged,    submitted, 258
-    triaged,    throttled, 190
-    triaged,    rejected,  18
+    triaged,    submitted, 264
+    triaged,    throttled, 189
+    triaged,    rejected,  17
     submitted,  resolved,  38
-    submitted,  dripped,   70
+    submitted,  dripped,   76
     submitted,  open,      150
     resolved,   merged,    18
     resolved,   closed,    20
