@@ -1,5 +1,3 @@
-# June Kim
-
 ## 64% merge rate · 1 streak (01:24 UTC)
 
 ```mermaid
