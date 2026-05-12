@@ -1,4 +1,4 @@
-## 46% merge rate · 53 merged · 40 repos · 🔥 3
+## 46% merge rate · 53 merged · 40 repos · 🔥 streak: 3
 
 ```mermaid
 sankey-beta
