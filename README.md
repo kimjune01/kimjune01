@@ -1,4 +1,4 @@
-## 45% merge rate · 1 streak (01:54 UTC)
+## 45% merge rate · 1 streak (01:55 UTC)
 
 ```mermaid
 sankey-beta
@@ -13,6 +13,16 @@ sankey-beta
 ```
 
 *since 2026-05-09T00:34:00Z (pipeline epoch)*
+
+<details>
+<summary>verify</summary>
+
+```graphql
+{ merged: search(query: "is:pr is:merged author:kimjune01 created:>2026-05-09T00:34:00Z", type: ISSUE) { issueCount }
+  closed: search(query: "is:pr is:closed is:unmerged author:kimjune01 created:>2026-05-09T00:34:00Z", type: ISSUE) { issueCount } }
+```
+
+</details>
 
 ## Feed
 
@@ -35,16 +45,6 @@ sankey-beta
 - [ruff#25066](https://github.com/astral-sh/ruff/pull/25066)
 - [llama.cpp#22873](https://github.com/ggml-org/llama.cpp/pull/22873)
 - [litestar#4755](https://github.com/litestar-org/litestar/pull/4755)
-
-<details>
-<summary>verify</summary>
-
-```graphql
-{ merged: search(query: "is:pr is:merged author:kimjune01 created:>2026-05-09T00:34:00Z", type: ISSUE) { issueCount }
-  closed: search(query: "is:pr is:closed is:unmerged author:kimjune01 created:>2026-05-09T00:34:00Z", type: ISSUE) { issueCount } }
-```
-
-</details>
 
 [hypothesis graph](HYPOTHESIS_GRAPH.md)
 
