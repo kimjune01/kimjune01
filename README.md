@@ -1,6 +1,6 @@
 # June Kim
 
-## 9 merged across 9 repos — 64% merge rate · 1 streak (01:22 UTC)
+## 9 merged across 9 repos — 64% merge rate · 1 streak (01:23 UTC)
 
 ```mermaid
 sankey-beta
@@ -16,7 +16,7 @@ sankey-beta
 
 *since 2026-05-09 (pipeline epoch)*
 
-🚨⚠️AI Slop⚠️🚨
+## 🚨⚠️AI Slop⚠️🚨
 - [uptime-kuma#7371](https://github.com/louislam/uptime-kuma/pull/7371)
 - [uptime-kuma#7372](https://github.com/louislam/uptime-kuma/pull/7372)
 - [ruff#25066](https://github.com/astral-sh/ruff/pull/25066)
