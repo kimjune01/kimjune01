@@ -1,12 +1,12 @@
-## 46% merge rate · 2 streak (08:13 UTC)
+## 46% merge rate · 2 streak (08:36 UTC)
 
 ```mermaid
 sankey-beta
-    triaged,    submitted, 303
-    triaged,    throttled, 160
-    triaged,    rejected,  22
+    triaged,    submitted, 336
+    triaged,    throttled, 143
+    triaged,    rejected,  25
     submitted,  resolved,  43
-    submitted,  dripped,   98
+    submitted,  dripped,   131
     submitted,  open,      162
     resolved,   merged,    20
     resolved,   closed,    23
@@ -53,11 +53,13 @@ xychart-beta
 
 | contributor | merged | rate | repos |
 |---|---|---|---|
-| SAY-5 | 52 | 65% | 49 |
+| SAY-5 | 54 | 65% | 51 |
 | mvanhorn | 14 | 82% | 12 |
 | kimjune01 | 14 | 56% | 14 |
 | ununununium | 11 | 68% | 9 |
-| officialasishkumar | 4 | 66% | 3 |
+| officialasishkumar | 5 | 71% | 4 |
+
+[Join the leaderboard](https://github.com/kimjune01/sweep)
 
 ## AI SLOP
 
