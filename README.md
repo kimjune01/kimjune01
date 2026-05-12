@@ -1,6 +1,6 @@
 # June Kim
 
-## 9 merged across 9 repos — 64% merge rate · 1 streak (01:23 UTC)
+## 64% merge rate · 1 streak (01:24 UTC)
 
 ```mermaid
 sankey-beta
