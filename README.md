@@ -1,6 +1,11 @@
 # June Kim
 
-Building agent architectures and ephemeral systems.
+## 15 merged across 15 repos — 27% merge rate
+
+```graphql
+{ merged: search(query: "is:pr is:merged author:kimjune01 created:>2026-04-11", type: ISSUE) { issueCount }
+  closed: search(query: "is:pr is:closed is:unmerged author:kimjune01 created:>2026-04-11", type: ISSUE) { issueCount } }
+```
 
 ## Current focus
 
@@ -29,4 +34,3 @@ Research engineer at EA on the AIML team — automated game testing. AI agents p
 ---
 
 Build in public. AGPL where it matters. Questions? june@june.kim
-
