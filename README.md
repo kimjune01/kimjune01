@@ -1,12 +1,12 @@
-## 46% merge rate · 2 streak (08:04 UTC)
+## 46% merge rate · 2 streak (08:13 UTC)
 
 ```mermaid
 sankey-beta
-    triaged,    submitted, 285
+    triaged,    submitted, 303
     triaged,    throttled, 160
-    triaged,    rejected,  21
+    triaged,    rejected,  22
     submitted,  resolved,  43
-    submitted,  dripped,   80
+    submitted,  dripped,   98
     submitted,  open,      162
     resolved,   merged,    20
     resolved,   closed,    23
@@ -49,7 +49,7 @@ xychart-beta
 
 ## Leaderboard
 
-*voluntary contributions to repos you don't own | rate < 90% (humans only) | [methodology](https://github.com/kimjune01/kimjune01)*
+*voluntary contributions to repos you don't own | non-owner only | [methodology](https://github.com/kimjune01/kimjune01)*
 
 | contributor | merged | rate | repos |
 |---|---|---|---|
