@@ -1,17 +1,17 @@
 # June Kim
 
-## 9 merged across 9 repos — 64% merge rate · 1 streak (01:21 UTC)
+## 9 merged across 9 repos — 64% merge rate · 1 streak (01:22 UTC)
 
 ```mermaid
 sankey-beta
-    triaged, submitted, 82
-    triaged, queued, 149
-    triaged, gate_fail, 7
-    submitted, resolved, 14
-    submitted, dripped, 30
-    submitted, open, 38
-    resolved, merged, 9
-    resolved, closed, 5
+    triaged,    submitted,  82
+    triaged,    in review,  149
+    triaged,    gate fail,  7
+    submitted,  resolved,   14
+    submitted,  dripped,    30
+    submitted,  open,       38
+    resolved,   merged,     9
+    resolved,   closed,     5
 ```
 
 *since 2026-05-09 (pipeline epoch)*
