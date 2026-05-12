@@ -1,15 +1,15 @@
-## 42% merge rate · 1 streak (01:43 UTC)
+## 45% merge rate · 1 streak (01:44 UTC)
 
 ```mermaid
 sankey-beta
-    triaged,    submitted, 164
+    triaged,    submitted, 162
     triaged,    throttled, 190
     triaged,    rejected,  11
-    submitted,  resolved,  33
+    submitted,  resolved,  31
     submitted,  dripped,   21
     submitted,  open,      110
     resolved,   merged,    14
-    resolved,   closed,    19
+    resolved,   closed,    17
 ```
 
 *since 2026-05-08 (pipeline epoch)*
@@ -38,8 +38,8 @@ sankey-beta
 <summary>verify</summary>
 
 ```graphql
-{ merged: search(query: "is:pr is:merged author:kimjune01 created:>2026-05-08", type: ISSUE) { issueCount }
-  closed: search(query: "is:pr is:closed is:unmerged author:kimjune01 created:>2026-05-08", type: ISSUE) { issueCount } }
+{ merged: search(query: "is:pr is:merged author:kimjune01 -repo:tinygrad/tinygrad created:>2026-05-08", type: ISSUE) { issueCount }
+  closed: search(query: "is:pr is:closed is:unmerged author:kimjune01 -repo:tinygrad/tinygrad created:>2026-05-08", type: ISSUE) { issueCount } }
 ```
 
 </details>
