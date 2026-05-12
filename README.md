@@ -37,10 +37,6 @@ sankey-beta
 
 [june.kim](https://june.kim)
 
-## Day job
-
-Research engineer at EA — AI agents that play games on real consoles, detect bugs, report them through an event pipeline.
-
 ---
 
 Build in public. AGPL where it matters. Questions? june@june.kim
