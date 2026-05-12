@@ -2,6 +2,16 @@
 
 ## 15 merged across 15 repos — 27% merge rate
 
+```mermaid
+sankey-beta
+    triaged, qa_passed, 41
+    triaged, gate_fail, 7
+    qa_passed, dripped, 28
+    qa_passed, org_blocked, 13
+    dripped, merged, 15
+    dripped, closed, 40
+```
+
 ```graphql
 { merged: search(query: "is:pr is:merged author:kimjune01 created:>2026-04-11", type: ISSUE) { issueCount }
   closed: search(query: "is:pr is:closed is:unmerged author:kimjune01 created:>2026-04-11", type: ISSUE) { issueCount } }
