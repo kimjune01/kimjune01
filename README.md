@@ -1,15 +1,13 @@
-## 44% merge rate · 0 streak (09:13 UTC)
+## 46% merge rate · 26 merged · 38 repos
 
 ```mermaid
 sankey-beta
-    triaged,    submitted, 343
-    triaged,    throttled, 136
-    triaged,    rejected,  44
-    submitted,  resolved,  47
-    submitted,  dripped,   102
-    submitted,  open,      194
-    resolved,   merged,    21
-    resolved,   closed,    26
+    triaged,    submitted, 242
+    triaged,    queued,    110
+    triaged,    evicted,    48
+    submitted,  merged,     26
+    submitted,  open,      186
+    submitted,  closed,     30
 ```
 
 ```mermaid
@@ -17,7 +15,7 @@ xychart-beta
     title "PRs merged per day"
     x-axis ["05-09", "05-10", "05-11", "05-12"]
     y-axis "merged"
-    bar [1, 5, 8, 7]
+    bar [1, 5, 8, 12]
 ```
 
 *since 2026-05-09T00:34:00Z (pipeline epoch)*
@@ -36,16 +34,16 @@ xychart-beta
 
 | | repo | PR |
 |---|------|----|
-| ❌ | ggml-org/llama.cpp | [#22965](https://github.com/ggml-org/llama.cpp/pull/22965) server: fix n_predict=-2 (generate until cont |
-| ❌ | cucumber/gherkin | [#589](https://github.com/cucumber/gherkin/pull/589) fix(c): segfault when one placeholder is a pr |
+| ✅ | sqlpage/SQLPage | [#1284](https://github.com/sqlpage/SQLPage/pull/1284) Fix DuckDB :: casting warning |
+| ✅ | cachix/secretspec | [#88](https://github.com/cachix/secretspec/pull/88) fix(test): portable command for empty-output test |
+| ✅ | tach-org/tach | [#931](https://github.com/tach-org/tach/pull/931) fix: report syntax errors as errors, not warnings |
+| ✅ | njbrake/agent-of-empires | [#1042](https://github.com/njbrake/agent-of-empires/pull/1042) refactor: remove dead claude.config_dir config field |
+| ✅ | jmpsec/osctrl | [#810](https://github.com/jmpsec/osctrl/pull/810) Fix race condition in IncExecution and IncError |
 | ✅ | JuliaDebug/Infiltrator.jl | [#176](https://github.com/JuliaDebug/Infiltrator.jl/pull/176) fix: dictionary key tab completion |
-| ❌ | dhonus/jellyfin-tui | [#194](https://github.com/dhonus/jellyfin-tui/pull/194) refactor: fix clippy warnings for code qualit |
 | ✅ | yrosseel/lavaan | [#551](https://github.com/yrosseel/lavaan/pull/551) Document 'icc' option in lavInspect help page |
-| ✅ | IppClub/Dora-SSR | [#97](https://github.com/IppClub/Dora-SSR/pull/97) Fix: remove default always-on-top behavior fo |
-| ❌ | risingwavelabs/risingwave | [#25609](https://github.com/risingwavelabs/risingwave/pull/25609) fix: use full column subset for distinct agg  |
-| ❌ | kanidm/kanidm | [#4337](https://github.com/kanidm/kanidm/pull/4337) Fix false positive permission warning for cac |
-| ❌ | kubescape/kubescape | [#2097](https://github.com/kubescape/kubescape/pull/2097) fix: harden vulnerability manifest URI parsin |
-| ✅ | aymericzip/intlayer | [#427](https://github.com/aymericzip/intlayer/pull/427) Fix logo animation positioning for RTL langua |
+| ✅ | IppClub/Dora-SSR | [#97](https://github.com/IppClub/Dora-SSR/pull/97) Fix: remove default always-on-top for runtime window |
+| ✅ | aymericzip/intlayer | [#427](https://github.com/aymericzip/intlayer/pull/427) Fix logo animation positioning for RTL languages |
+| ✅ | kubescape/kubescape | [#2076](https://github.com/kubescape/kubescape/pull/2076) fix: strip URI prefix before splitting in ReadResource |
 
 ## Leaderboard
 
@@ -54,7 +52,7 @@ xychart-beta
 | contributor | merged | rate | repos |
 |---|---|---|---|
 | SAY-5 | 59 | 67% | 54 |
-| kimjune01 | 15 | 51% | 15 |
+| kimjune01 | 50 | 45% | 38 |
 | mvanhorn | 14 | 82% | 12 |
 | ununununium | 12 | 70% | 10 |
 | officialasishkumar | 5 | 71% | 4 |
@@ -63,11 +61,13 @@ xychart-beta
 
 ## AI SLOP
 
-| PR | time to close | bugs | title |
+| PR | time to close | bugs | reason |
 |---|---|---|---|
-| [uptime-kuma#7371](https://github.com/louislam/uptime-kuma/pull/7371) | <1 min | 0 | 🚨⚠️AI Slop⚠️🚨 cherry-picked |
-| [uptime-kuma#7372](https://github.com/louislam/uptime-kuma/pull/7372) | <1 min | 0 | 🚨⚠️AI Slop⚠️🚨 cherry-picked |
+| [uptime-kuma#7371](https://github.com/louislam/uptime-kuma/pull/7371) | <1 min | 0 | cherry-picked |
+| [uptime-kuma#7372](https://github.com/louislam/uptime-kuma/pull/7372) | <1 min | 0 | cherry-picked |
+| [jellyfin-tui#194](https://github.com/dhonus/jellyfin-tui/pull/194) | 5 min | 0 | ai slop |
 | [litestar#4755](https://github.com/litestar-org/litestar/pull/4755) | 7 hrs | 0 | closed per AI policy |
+| [gherkin#589](https://github.com/cucumber/gherkin/pull/589) | 3 hrs | 0 | no human in the loop |
 | [ruff#25066](https://github.com/astral-sh/ruff/pull/25066) | 2 days | 0 | mainly produced by AI |
 | [llama.cpp#22873](https://github.com/ggml-org/llama.cpp/pull/22873) | 2 days | 1 | AI-generated PR detected |
 
