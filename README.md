@@ -1,17 +1,17 @@
-## 50% merge rate · 1 streak (01:59 UTC)
+## 53% merge rate · 6 streak (15:51 UTC)
 
 [Speedrunning Open Source](https://june.kim/speedrunning-open-source)
 
 ```mermaid
 sankey-beta
-    triaged,    submitted, 321
-    triaged,    throttled, 29
-    triaged,    rejected,  8
-    submitted,  resolved,  76
-    submitted,  dripped,   71
-    submitted,  open,      174
-    resolved,   merged,    38
-    resolved,   closed,    38
+    triaged,    submitted, 354
+    triaged,    throttled, 28
+    triaged,    rejected,  9
+    submitted,  resolved,  95
+    submitted,  dripped,   87
+    submitted,  open,      172
+    resolved,   merged,    51
+    resolved,   closed,    44
 ```
 
 ```mermaid
@@ -19,7 +19,7 @@ xychart-beta
     title "PRs merged per day"
     x-axis ["05-09", "05-10", "05-11", "05-12", "05-13"]
     y-axis "merged"
-    bar [1, 5, 8, 23, 1]
+    bar [1, 5, 8, 23, 14]
 ```
 
 *since 2026-05-09T00:34:00Z (pipeline epoch)*
@@ -34,20 +34,46 @@ xychart-beta
 
 </details>
 
+## Issues generated
+
+**69% positive reception** · [hypothesis graph](ISSUE_HYPOTHESIS_GRAPH.md)
+
+58 issues filed since 2026-05-12 (slop-filter campaign start) · 16 positive · 7 negative · 10 bot-closed (already protected) · 25 inconclusive
+
+```mermaid
+sankey-beta
+    filed,    decided,      23
+    filed,    bot-closed,   10
+    filed,    inconclusive, 25
+    decided,  positive,     16
+    decided,  negative,     7
+```
+
+*positive = closed-as-completed, accepted/bug-labeled, or open with maintainer engagement. negative = maintainer rejected (closed-as-not-planned with engagement), or silent treatment (open with no engagement after 7-day grace — wrong target). bot-closed = closed by a bot account, spam-labeled, or stale-bot patterns — these repos already have automated handling, so the offer is redundant. inconclusive = open without engagement within 7-day grace, or closed as duplicate. rate = positive ÷ (positive + negative).*
+
+<details>
+<summary>verify</summary>
+
+```bash
+~/.sweep/bin/scoreboard --since 2026-05-12
+```
+
+</details>
+
 ## Feed
 
 | | repo | PR |
 |---|------|----|
-| ✅ | vavallee/bindery | [#622](https://github.com/vavallee/bindery/pull/622) feat(library): surface unmatched files in Set |
-| ❌ | du82/nonograph | [#17](https://github.com/du82/nonograph/pull/17) Fix selection anchor restoration on page load |
-| ✅ | sorairolake/qrtool | [#1002](https://github.com/sorairolake/qrtool/pull/1002) fix: return non-zero exit code when no QR cod |
-| ✅ | VictoriaMetrics/VictoriaMetrics | [#10934](https://github.com/VictoriaMetrics/VictoriaMetrics/pull/10934) feat: add basicAuth.usernameFile CLI flags fo |
-| ✅ | jetzig-framework/zmpl | [#71](https://github.com/jetzig-framework/zmpl/pull/71) Fix cross-platform compilation: use host targ |
-| ✅ | pylint-dev/astroid | [#3053](https://github.com/pylint-dev/astroid/pull/3053) test: add Subscript target coverage for starr |
-| ✅ | mgree/ffs | [#144](https://github.com/mgree/ffs/pull/144) Fix empty file mounting for JSON, YAML, and T |
-| ✅ | godotengine/godot | [#119362](https://github.com/godotengine/godot/pull/119362) Fix dragging unselected items from FileSystem |
-| ✅ | hyperium/hyper | [#4068](https://github.com/hyperium/hyper/pull/4068) feat(http2/client): expose reset_stream_durat |
-| ✅ | pawurb/hotpath-rs | [#338](https://github.com/pawurb/hotpath-rs/pull/338) fix: Windows thread monitoring support |
+| ✅ | slatedb/slatedb | [#1654](https://github.com/slatedb/slatedb/pull/1654) Fix DbReaderBuilder bypassing DbCacheWrapper  |
+| ✅ | pingcap/tidb | [#68318](https://github.com/pingcap/tidb/pull/68318) expression: guard LPAD/RPAD against integer o |
+| ✅ | jmhodges/howsmyssl | [#1005](https://github.com/jmhodges/howsmyssl/pull/1005) Fix JSON redirect to respect Accept header |
+| ✅ | apache/opendal | [#7513](https://github.com/apache/opendal/pull/7513) feat(core): add split_to and split_off to Buf |
+| ✅ | mattgodbolt/jsbeeb | [#696](https://github.com/mattgodbolt/jsbeeb/pull/696) fix: use clientX/Y for mouse coordinates |
+| ✅ | flux-rs/flux | [#1592](https://github.com/flux-rs/flux/pull/1592) Use compact formatting for fixpoint binary co |
+| ❌ | fish-shell/fish-shell | [#12754](https://github.com/fish-shell/fish-shell/pull/12754) fish_git_prompt: fix rename miscount in infor |
+| ✅ | dyc3/opentogethertube | [#2017](https://github.com/dyc3/opentogethertube/pull/2017) fix: reject newlines in room title |
+| ✅ | dawsers/scroll | [#270](https://github.com/dawsers/scroll/pull/270) fix: apply variable replacement in deferred c |
+| ✅ | mikey0000/PyMammotion | [#139](https://github.com/mikey0000/PyMammotion/pull/139) fix: expose params.time from Aliyun thing-eve |
 
 ## Leaderboard
 
@@ -55,13 +81,14 @@ xychart-beta
 
 | contributor | merged | rate | repos |
 |---|---|---|---|
-| SAY-5 | 80 | 64% | 74 |
-| kimjune01 | 29 | 55% | 26 |
-| mvanhorn | 22 | 81% | 19 |
-| ununununium | 13 | 68% | 11 |
-| yakushabb | 12 | 80% | 12 |
-| officialasishkumar | 9 | 81% | 7 |
-| GeertvanHorrik | 1 | 50% | 1 |
+| SAY-5 | 101 | 67% | 93 |
+| kimjune01 | 42 | 60% | 39 |
+| mvanhorn | 28 | 84% | 22 |
+| yakushabb | 17 | 73% | 17 |
+| officialasishkumar | 15 | 88% | 12 |
+| ununununium | 14 | 70% | 11 |
+| fdelbrayelle | 6 | 85% | 3 |
+| GeertvanHorrik | 2 | 66% | 1 |
 
 [Join the leaderboard](https://github.com/kimjune01/sweep/blob/master/README.md) · [Protect your repo](https://github.com/kimjune01/sweep/blob/master/action.yml)
 
