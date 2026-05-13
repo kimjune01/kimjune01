@@ -1,4 +1,4 @@
-## 53% merge rate · 6 streak (16:01 UTC)
+## 53% merge rate · 6 streak (16:18 UTC)
 
 [Speedrunning Open Source](https://june.kim/speedrunning-open-source)
 
@@ -78,7 +78,7 @@ sankey-beta
 
 ## Leaderboard
 
-*voluntary contributions to repos you don't own | non-owner only | [methodology](https://github.com/kimjune01/kimjune01)*
+*since 2026-05-09T00:34:00Z (pipeline epoch) | voluntary contributions to repos you don't own | non-owner only | [methodology](https://github.com/kimjune01/kimjune01)*
 
 | contributor | merged | rate | repos |
 |---|---|---|---|
@@ -88,7 +88,7 @@ sankey-beta
 | yakushabb | 17 | 73% | 17 |
 | officialasishkumar | 15 | 88% | 12 |
 | ununununium | 14 | 70% | 11 |
-| fdelbrayelle | 6 | 85% | 3 |
+| fdelbrayelle | 7 | 87% | 4 |
 | GeertvanHorrik | 2 | 66% | 1 |
 
 [Join the leaderboard](https://github.com/kimjune01/sweep/blob/master/README.md) · [Protect your repo](https://github.com/kimjune01/sweep/blob/master/action.yml)
