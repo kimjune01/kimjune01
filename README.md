@@ -1,17 +1,17 @@
-## 52% merge rate · 0 streak (16:52 UTC)
+## 53% merge rate · 0 streak (22:49 UTC)
 
 [Speedrunning Open Source](https://june.kim/speedrunning-open-source) · [why the loop works](https://june.kim/does-iteration-mitigate-slop-slope) (mechanism explainer; data is in the verify block below)
 
 ```mermaid
 sankey-beta
-    triaged,    submitted, 354
-    triaged,    throttled, 28
+    triaged,    submitted, 345
+    triaged,    throttled, 29
     triaged,    rejected,  9
-    submitted,  resolved,  97
-    submitted,  dripped,   87
-    submitted,  open,      170
-    resolved,   merged,    51
-    resolved,   closed,    46
+    submitted,  resolved,  104
+    submitted,  dripped,   78
+    submitted,  open,      163
+    resolved,   merged,    56
+    resolved,   closed,    48
 ```
 
 ```mermaid
@@ -19,8 +19,8 @@ xychart-beta
     title "PRs merged + defenses dispensed per day"
     x-axis ["05-09", "05-10", "05-11", "05-12", "05-13"]
     y-axis "count"
-    bar [1, 5, 8, 23, 14]
-    bar [0, 0, 0, 9, 8]
+    bar [1, 5, 8, 23, 19]
+    bar [0, 0, 0, 9, 9]
 ```
 
 *since 2026-05-09T00:34:00Z (pipeline epoch)*
@@ -37,16 +37,16 @@ xychart-beta
 
 ## Issues generated
 
-**70% positive reception** · [hypothesis graph](ISSUE_HYPOTHESIS_GRAPH.md)
+**72% positive reception** · [hypothesis graph](ISSUE_HYPOTHESIS_GRAPH.md)
 
-58 issues filed since 2026-05-12 (slop-filter campaign start) · 17 positive · 7 negative · 11 bot-closed (already protected) · 23 inconclusive
+58 issues filed since 2026-05-12 (slop-filter campaign start) · 18 positive · 7 negative · 11 bot-closed (already protected) · 22 inconclusive
 
 ```mermaid
 sankey-beta
-    filed,    decided,      24
+    filed,    decided,      25
     filed,    bot-closed,   11
-    filed,    inconclusive, 23
-    decided,  positive,     17
+    filed,    inconclusive, 22
+    decided,  positive,     18
     decided,  negative,     7
 ```
 
@@ -65,16 +65,16 @@ sankey-beta
 
 | | repo | PR |
 |---|------|----|
+| ❌ | Jaxx497/NoctaVox | [#21](https://github.com/Jaxx497/NoctaVox/pull/21) fix: provide actionable error messages for da |
+| ✅ | ag2ai/ag2 | [#2805](https://github.com/ag2ai/ag2/pull/2805) fix: initialize task variable in RemoteAgent  |
+| ✅ | hyperium/hyper | [#4065](https://github.com/hyperium/hyper/pull/4065) docs(error): add detailed doc comments to Err |
+| ✅ | luminal-ai/luminal | [#312](https://github.com/luminal-ai/luminal/pull/312) feat: add CUDA 13.2 support via cudarc 0.19.4 |
+| ❌ | boldsoftware/shelley | [#208](https://github.com/boldsoftware/shelley/pull/208) docs: document bang (!) command for shell acc |
+| ✅ | open-telemetry/opentelemetry-collector | [#15281](https://github.com/open-telemetry/opentelemetry-collector/pull/15281) Add testable examples for consumer package |
+| ✅ | MCPJam/inspector | [#2093](https://github.com/MCPJam/inspector/pull/2093) fix(docs): use latest release URLs for deskto |
 | ❌ | pvolok/mprocs | [#218](https://github.com/pvolok/mprocs/pull/218) Show autostart:false procs in gray instead of |
 | ❌ | pvolok/mprocs | [#217](https://github.com/pvolok/mprocs/pull/217) docs: document command menu (p key) |
 | ✅ | slatedb/slatedb | [#1654](https://github.com/slatedb/slatedb/pull/1654) Fix DbReaderBuilder bypassing DbCacheWrapper  |
-| ✅ | pingcap/tidb | [#68318](https://github.com/pingcap/tidb/pull/68318) expression: guard LPAD/RPAD against integer o |
-| ✅ | jmhodges/howsmyssl | [#1005](https://github.com/jmhodges/howsmyssl/pull/1005) Fix JSON redirect to respect Accept header |
-| ✅ | apache/opendal | [#7513](https://github.com/apache/opendal/pull/7513) feat(core): add split_to and split_off to Buf |
-| ✅ | mattgodbolt/jsbeeb | [#696](https://github.com/mattgodbolt/jsbeeb/pull/696) fix: use clientX/Y for mouse coordinates |
-| ✅ | flux-rs/flux | [#1592](https://github.com/flux-rs/flux/pull/1592) Use compact formatting for fixpoint binary co |
-| ❌ | fish-shell/fish-shell | [#12754](https://github.com/fish-shell/fish-shell/pull/12754) fish_git_prompt: fix rename miscount in infor |
-| ✅ | dyc3/opentogethertube | [#2017](https://github.com/dyc3/opentogethertube/pull/2017) fix: reject newlines in room title |
 
 ## Leaderboard
 
@@ -82,14 +82,15 @@ sankey-beta
 
 | contributor | merged | rate | repos |
 |---|---|---|---|
-| SAY-5 | 101 | 67% | 93 |
-| kimjune01 | 42 | 58% | 39 |
-| mvanhorn | 28 | 84% | 22 |
-| yakushabb | 17 | 73% | 17 |
+| SAY-5 | 112 | 67% | 93 |
+| kimjune01 | 45 | 58% | 42 |
+| mvanhorn | 31 | 86% | 24 |
+| yakushabb | 23 | 79% | 22 |
 | officialasishkumar | 15 | 88% | 12 |
 | ununununium | 14 | 70% | 11 |
 | fdelbrayelle | 7 | 87% | 4 |
 | GeertvanHorrik | 2 | 66% | 1 |
+| tuanaiseo | 1 | 33% | 1 |
 
 [Join the leaderboard](https://github.com/kimjune01/sweep/blob/master/README.md) · [Protect your repo](https://github.com/kimjune01/sweep/blob/master/action.yml)
 
