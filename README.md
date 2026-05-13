@@ -1,25 +1,25 @@
-## 49% merge rate · 0 streak (23:26 UTC)
+## 50% merge rate · 1 streak (01:59 UTC)
 
 [Speedrunning Open Source](https://june.kim/speedrunning-open-source)
 
 ```mermaid
 sankey-beta
-    triaged,    submitted, 352
-    triaged,    throttled, 134
-    triaged,    rejected,  57
-    submitted,  resolved,  75
-    submitted,  dripped,   105
-    submitted,  open,      172
-    resolved,   merged,    37
+    triaged,    submitted, 321
+    triaged,    throttled, 29
+    triaged,    rejected,  8
+    submitted,  resolved,  76
+    submitted,  dripped,   71
+    submitted,  open,      174
+    resolved,   merged,    38
     resolved,   closed,    38
 ```
 
 ```mermaid
 xychart-beta
     title "PRs merged per day"
-    x-axis ["05-09", "05-10", "05-11", "05-12"]
+    x-axis ["05-09", "05-10", "05-11", "05-12", "05-13"]
     y-axis "merged"
-    bar [1, 5, 8, 23]
+    bar [1, 5, 8, 23, 1]
 ```
 
 *since 2026-05-09T00:34:00Z (pipeline epoch)*
@@ -38,6 +38,7 @@ xychart-beta
 
 | | repo | PR |
 |---|------|----|
+| ✅ | vavallee/bindery | [#622](https://github.com/vavallee/bindery/pull/622) feat(library): surface unmatched files in Set |
 | ❌ | du82/nonograph | [#17](https://github.com/du82/nonograph/pull/17) Fix selection anchor restoration on page load |
 | ✅ | sorairolake/qrtool | [#1002](https://github.com/sorairolake/qrtool/pull/1002) fix: return non-zero exit code when no QR cod |
 | ✅ | VictoriaMetrics/VictoriaMetrics | [#10934](https://github.com/VictoriaMetrics/VictoriaMetrics/pull/10934) feat: add basicAuth.usernameFile CLI flags fo |
@@ -47,7 +48,6 @@ xychart-beta
 | ✅ | godotengine/godot | [#119362](https://github.com/godotengine/godot/pull/119362) Fix dragging unselected items from FileSystem |
 | ✅ | hyperium/hyper | [#4068](https://github.com/hyperium/hyper/pull/4068) feat(http2/client): expose reset_stream_durat |
 | ✅ | pawurb/hotpath-rs | [#338](https://github.com/pawurb/hotpath-rs/pull/338) fix: Windows thread monitoring support |
-| ❌ | kanidm/kanidm | [#4339](https://github.com/kanidm/kanidm/pull/4339) Fix false positive permission warning for dir |
 
 ## Leaderboard
 
@@ -55,9 +55,9 @@ xychart-beta
 
 | contributor | merged | rate | repos |
 |---|---|---|---|
-| SAY-5 | 78 | 63% | 72 |
-| kimjune01 | 28 | 54% | 26 |
-| mvanhorn | 21 | 80% | 18 |
+| SAY-5 | 80 | 64% | 74 |
+| kimjune01 | 29 | 55% | 26 |
+| mvanhorn | 22 | 81% | 19 |
 | ununununium | 13 | 68% | 11 |
 | yakushabb | 12 | 80% | 12 |
 | officialasishkumar | 9 | 81% | 7 |

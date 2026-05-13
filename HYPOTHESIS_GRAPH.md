@@ -447,3 +447,25 @@ H6 (stochastic search) → H1 (issue-first) → H5 (easy first for solo maintain
 **H5 refinement:** hotpath-rs +726 line port falsifies the "boring fixes only" reading of H5. Refined: solo maintainers accept *bounded-scope* large diffs (one platform, one feature). The acceptance condition is review responsiveness, not diff size.
 
 **Pre-registration for retro 12:** 6 newly-warm repos (hyperium, jetzig, pylint-dev, mgree, pawurb, godot). Prediction: at least 2 will accept a second PR within 7 days (H2c compounding). Falsifier: zero second merges across all 6.
+
+### Retro 12 (2026-05-13T00:00Z) — first H10, first revert, first issue-misread
+
+**Delta since retro 11 (18:30Z, 5h30m):** 2 merges, 1 closure, 1 revert. Raw merge rate held at 33/85 = 39%. Three first-of-kind outcome shapes appeared.
+
+**New outcomes:**
+- VictoriaMetrics/VictoriaMetrics#10934 — basicAuth.usernameFile CLI flags. f41gh7 APPROVED after DCO sign-off. 15k+★ multi-maintainer. **H2a AGAINST + new fix-shape pattern.**
+- sorairolake/qrtool#1002 — exit code on QR-decode failure. **MERGED THEN REVERTED.** Maintainer: "I don't think this fixes #695. The images listed contain QR codes." Code was correct; *interpretation of bug was inverted*. **First instance of merged-then-reverted.**
+- du82/nonograph#17 — selection anchor restoration. **CLOSED with screenshot + "I read your blog. Interesting..."** Maintainer found speedrunning-open-source post within 5h of publication and traced back. **First H10 instance.**
+
+**H10 (distribution detection) — FIRST INSTANCE.** Post live ~18:00Z, closure 23:25Z. Same-day, single-hop propagation from blog → maintainer → eviction. Code was fine; closure was identity-based. H10 closures are not pipeline errors and not credence tests — they are intentional consequences of the public ship-defense-with-attack strategy. New retro taxonomy category: `distribution_detection`. Excluded from adjusted merge rate (predicted, not failed).
+
+**H10 propagation rate:** appears to be hours, not days. Project: maintainers who close PRs after blog discovery will continue at low but nonzero rate as the post circulates.
+
+**H1 failure mode (issue misreading).** qrtool#1002 is the first merged-then-reverted. Code passed review; interpretive error caught post-merge. Issue described regression images (should decode but didn't); agent shipped inverse fix (return error on no-decode). H1 still strong overall, but H1's success requires reading issue's *attached evidence*, not just title/body. **Triage skill should fetch issue attachments.**
+
+**New preferred fix shape (config-layer mirroring).** VictoriaMetrics#10934 confirmed: when feature X exists in config layer A but not B, mirroring is mechanical, justification automatic, reviewer verifies by analogy. Add to actionable scoring.
+
+**Pre-registration for retro 13:**
+- H10 propagation: predict 1–3 distribution-detection closures within 7 days as post circulates. Falsifier: zero.
+- H2c compounding (carry-forward from retro 11): still tracking 6 newly-warm repos. No second-PR submissions yet (actionable wound down).
+- Issue-misreading rate: predict <5% of merges get reverted (qrtool was 1/8 = 12.5%; expect baseline regression).
