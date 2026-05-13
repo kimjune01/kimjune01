@@ -1,17 +1,17 @@
-## 53% merge rate · 6 streak (16:20 UTC)
+## 52% merge rate · 0 streak (16:52 UTC)
 
-[Speedrunning Open Source](https://june.kim/speedrunning-open-source)
+[Speedrunning Open Source](https://june.kim/speedrunning-open-source) · [why the loop works](https://june.kim/does-iteration-mitigate-slop-slope) (mechanism explainer; data is in the verify block below)
 
 ```mermaid
 sankey-beta
     triaged,    submitted, 354
     triaged,    throttled, 28
     triaged,    rejected,  9
-    submitted,  resolved,  95
+    submitted,  resolved,  97
     submitted,  dripped,   87
-    submitted,  open,      172
+    submitted,  open,      170
     resolved,   merged,    51
-    resolved,   closed,    44
+    resolved,   closed,    46
 ```
 
 ```mermaid
@@ -20,7 +20,7 @@ xychart-beta
     x-axis ["05-09", "05-10", "05-11", "05-12", "05-13"]
     y-axis "count"
     bar [1, 5, 8, 23, 14]
-    bar [0, 0, 0, 9, 7]
+    bar [0, 0, 0, 9, 8]
 ```
 
 *since 2026-05-09T00:34:00Z (pipeline epoch)*
@@ -37,16 +37,16 @@ xychart-beta
 
 ## Issues generated
 
-**69% positive reception** · [hypothesis graph](ISSUE_HYPOTHESIS_GRAPH.md)
+**70% positive reception** · [hypothesis graph](ISSUE_HYPOTHESIS_GRAPH.md)
 
-58 issues filed since 2026-05-12 (slop-filter campaign start) · 16 positive · 7 negative · 10 bot-closed (already protected) · 25 inconclusive
+58 issues filed since 2026-05-12 (slop-filter campaign start) · 17 positive · 7 negative · 11 bot-closed (already protected) · 23 inconclusive
 
 ```mermaid
 sankey-beta
-    filed,    decided,      23
-    filed,    bot-closed,   10
-    filed,    inconclusive, 25
-    decided,  positive,     16
+    filed,    decided,      24
+    filed,    bot-closed,   11
+    filed,    inconclusive, 23
+    decided,  positive,     17
     decided,  negative,     7
 ```
 
@@ -65,6 +65,8 @@ sankey-beta
 
 | | repo | PR |
 |---|------|----|
+| ❌ | pvolok/mprocs | [#218](https://github.com/pvolok/mprocs/pull/218) Show autostart:false procs in gray instead of |
+| ❌ | pvolok/mprocs | [#217](https://github.com/pvolok/mprocs/pull/217) docs: document command menu (p key) |
 | ✅ | slatedb/slatedb | [#1654](https://github.com/slatedb/slatedb/pull/1654) Fix DbReaderBuilder bypassing DbCacheWrapper  |
 | ✅ | pingcap/tidb | [#68318](https://github.com/pingcap/tidb/pull/68318) expression: guard LPAD/RPAD against integer o |
 | ✅ | jmhodges/howsmyssl | [#1005](https://github.com/jmhodges/howsmyssl/pull/1005) Fix JSON redirect to respect Accept header |
@@ -73,8 +75,6 @@ sankey-beta
 | ✅ | flux-rs/flux | [#1592](https://github.com/flux-rs/flux/pull/1592) Use compact formatting for fixpoint binary co |
 | ❌ | fish-shell/fish-shell | [#12754](https://github.com/fish-shell/fish-shell/pull/12754) fish_git_prompt: fix rename miscount in infor |
 | ✅ | dyc3/opentogethertube | [#2017](https://github.com/dyc3/opentogethertube/pull/2017) fix: reject newlines in room title |
-| ✅ | dawsers/scroll | [#270](https://github.com/dawsers/scroll/pull/270) fix: apply variable replacement in deferred c |
-| ✅ | mikey0000/PyMammotion | [#139](https://github.com/mikey0000/PyMammotion/pull/139) fix: expose params.time from Aliyun thing-eve |
 
 ## Leaderboard
 
@@ -83,7 +83,7 @@ sankey-beta
 | contributor | merged | rate | repos |
 |---|---|---|---|
 | SAY-5 | 101 | 67% | 93 |
-| kimjune01 | 42 | 60% | 39 |
+| kimjune01 | 42 | 58% | 39 |
 | mvanhorn | 28 | 84% | 22 |
 | yakushabb | 17 | 73% | 17 |
 | officialasishkumar | 15 | 88% | 12 |
