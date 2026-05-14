@@ -100,4 +100,4 @@ sankey-beta
 
 ---
 
-[june.kim](https://june.kim) · CC-BY-NA-NS
+[june.kim](https://june.kim) · [CC-BY-SA-NS](https://june.kim/cc-by-sa-ns)
