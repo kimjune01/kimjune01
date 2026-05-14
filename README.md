@@ -1,4 +1,4 @@
-## 55% merge rate · 3 streak (02:54 UTC)
+## 55% merge rate (02:54 UTC)
 
 [Speedrunning Open Source](https://june.kim/speedrunning-open-source) · [why the loop works](https://june.kim/does-iteration-mitigate-slop-slope) (mechanism explainer; data is in the verify block below)
 
@@ -61,7 +61,7 @@ sankey-beta
 
 </details>
 
-## Feed
+## Feed · 🔥 3 streak
 
 | | repo | PR |
 |---|------|----|
