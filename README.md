@@ -37,7 +37,7 @@ xychart-beta
 
 ## Issues generated
 
-**68% positive reception** · [hypothesis graph](ISSUE_HYPOTHESIS_GRAPH.md)
+**68% positive reception** · [hypothesis graph](https://github.com/kimjune01/sweep/blob/master/ISSUE_HYPOTHESIS_GRAPH.md)
 
 60 issues filed since 2026-05-12 (slop-filter campaign start) · 17 positive · 8 negative · 12 bot-closed (already protected) · 23 inconclusive
 
@@ -104,7 +104,7 @@ sankey-beta
 | [ruff#25066](https://github.com/astral-sh/ruff/pull/25066) | 2 days | 0 | mainly produced by AI |
 | [llama.cpp#22873](https://github.com/ggml-org/llama.cpp/pull/22873) | 2 days | 1 | AI-generated PR detected |
 
-[hypothesis graph](HYPOTHESIS_GRAPH.md)
+[hypothesis graph](https://github.com/kimjune01/sweep/blob/master/HYPOTHESIS_GRAPH.md)
 
 ---
 
