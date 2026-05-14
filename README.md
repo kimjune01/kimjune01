@@ -4,12 +4,12 @@
 
 ```mermaid
 sankey-beta
-    triaged,    submitted, 316
-    triaged,    throttled, 26
-    triaged,    rejected,  7
+    triaged,    submitted, 320
+    triaged,    throttled, 25
+    triaged,    rejected,  6
     submitted,  resolved,  107
     submitted,  dripped,   49
-    submitted,  open,      160
+    submitted,  open,      164
     resolved,   merged,    59
     resolved,   closed,    48
 ```
@@ -20,7 +20,7 @@ xychart-beta
     x-axis ["05-09", "05-10", "05-11", "05-12", "05-13", "05-14"]
     y-axis "count"
     bar [1, 5, 8, 23, 20, 2]
-    bar [0, 0, 0, 9, 8, 0]
+    bar [0, 0, 0, 9, 8, 1]
 ```
 
 *since 2026-05-09T00:34:00Z (pipeline epoch)*
@@ -37,16 +37,16 @@ xychart-beta
 
 ## Issues generated
 
-**68% positive reception** · [hypothesis graph](https://github.com/kimjune01/sweep/blob/master/ISSUE_HYPOTHESIS_GRAPH.md)
+**69% positive reception** · [hypothesis graph](https://github.com/kimjune01/sweep/blob/master/ISSUE_HYPOTHESIS_GRAPH.md)
 
-60 issues filed since 2026-05-12 (slop-filter campaign start) · 17 positive · 8 negative · 12 bot-closed (already protected) · 23 inconclusive
+65 issues filed since 2026-05-12 (slop-filter campaign start) · 18 positive · 8 negative · 12 bot-closed (already protected) · 27 inconclusive
 
 ```mermaid
 sankey-beta
-    filed,    decided,      25
+    filed,    decided,      26
     filed,    bot-closed,   12
-    filed,    inconclusive, 23
-    decided,  positive,     17
+    filed,    inconclusive, 27
+    decided,  positive,     18
     decided,  negative,     8
 ```
 
@@ -82,11 +82,11 @@ sankey-beta
 
 | contributor | merged | rate | repos | median diff |
 |---|---|---|---|---|
-| SAY-5 | 115 | 68% | 93 | 14 |
+| SAY-5 | 117 | 68% | 93 | 15 |
 | kimjune01 | 48 | 60% | 45 | 40 |
-| mvanhorn | 32 | 86% | 25 | 55 |
+| mvanhorn | 33 | 86% | 26 | 54 |
 | yakushabb | 23 | 79% | 22 | 8 |
-| officialasishkumar | 15 | 88% | 12 | 64 |
+| officialasishkumar | 16 | 88% | 13 | 58 |
 | ununununium | 15 | 71% | 12 | 1 |
 | fdelbrayelle | 7 | 87% | 4 | 43 |
 | GeertvanHorrik | 2 | 66% | 1 | 20 |
