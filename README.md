@@ -83,6 +83,7 @@ sankey-beta
 
 | contributor | merged | rate | repos | median diff |
 |---|---|---|---|---|
+| SAY-5 | 127 | 70% | 48+ | 29 |
 | kimjune01 | 49 | 60% | 46 | 41 |
 | mvanhorn | 33 | 84% | 26 | 54 |
 | yakushabb | 24 | 80% | 23 | 10 |
