@@ -14,13 +14,7 @@ sankey-beta
     resolved,   closed,    48
 ```
 
-```mermaid
-xychart-beta
-    title "PRs merged (M) + defenses dispensed (D) per day"
-    x-axis ["M-05-09", "D-05-09", "M-05-10", "D-05-10", "M-05-11", "D-05-11", "M-05-12", "D-05-12", "M-05-13", "D-05-13", "M-05-14", "D-05-14"]
-    y-axis "count" 0 --> 23
-    bar [1, 0, 5, 0, 8, 0, 23, 9, 20, 8, 5, 2]
-```
+<img src="per-day-chart.svg" alt="PRs merged (blue) and defenses dispensed (orange) per day" style="max-width:100%; height:auto;" />
 
 *since 2026-05-09T00:34:00Z (pipeline epoch)*
 
@@ -106,4 +100,4 @@ sankey-beta
 
 ---
 
-[june.kim](https://june.kim) · AGPL where it matters
+[june.kim](https://june.kim) · CC-BY-NA-NS
