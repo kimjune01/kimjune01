@@ -1,26 +1,25 @@
-## 55% merge rate (as of May 14, 2026)
+## 56% merge rate (as of May 14, 2026)
 
 [Speedrunning Open Source](https://june.kim/speedrunning-open-source) · [why the loop works](https://june.kim/does-iteration-mitigate-slop-slope) (mechanism explainer; data is in the verify block below)
 
 ```mermaid
 sankey-beta
-    triaged,    submitted, 320
-    triaged,    throttled, 25
-    triaged,    rejected,  6
-    submitted,  resolved,  107
-    submitted,  dripped,   49
-    submitted,  open,      164
-    resolved,   merged,    59
+    triaged,    submitted, 322
+    triaged,    throttled, 36
+    triaged,    rejected,  10
+    submitted,  resolved,  110
+    submitted,  dripped,   46
+    submitted,  open,      166
+    resolved,   merged,    62
     resolved,   closed,    48
 ```
 
 ```mermaid
 xychart-beta
-    title "PRs merged + defenses dispensed per day"
-    x-axis ["05-09", "05-10", "05-11", "05-12", "05-13", "05-14"]
-    y-axis "count"
-    bar [1, 5, 8, 23, 20, 2]
-    bar [0, 0, 0, 9, 8, 1]
+    title "PRs merged (M) + defenses dispensed (D) per day"
+    x-axis ["M-05-09", "D-05-09", "M-05-10", "D-05-10", "M-05-11", "D-05-11", "M-05-12", "D-05-12", "M-05-13", "D-05-13", "M-05-14", "D-05-14"]
+    y-axis "count" 0 --> 23
+    bar [1, 0, 5, 0, 8, 0, 23, 9, 20, 8, 5, 2]
 ```
 
 *since 2026-05-09T00:34:00Z (pipeline epoch)*
@@ -37,17 +36,17 @@ xychart-beta
 
 ## Issues generated
 
-**69% positive reception** · [hypothesis graph](https://github.com/kimjune01/sweep/blob/master/ISSUE_HYPOTHESIS_GRAPH.md)
+**67% positive reception** · [hypothesis graph](https://github.com/kimjune01/sweep/blob/master/ISSUE_HYPOTHESIS_GRAPH.md)
 
-65 issues filed since 2026-05-12 (slop-filter campaign start) · 18 positive · 8 negative · 12 bot-closed (already protected) · 27 inconclusive
+65 issues filed since 2026-05-12 (slop-filter campaign start) · 19 positive · 9 negative · 12 bot-closed (already protected) · 25 inconclusive
 
 ```mermaid
 sankey-beta
-    filed,    decided,      26
+    filed,    decided,      28
     filed,    bot-closed,   12
-    filed,    inconclusive, 27
-    decided,  positive,     18
-    decided,  negative,     8
+    filed,    inconclusive, 25
+    decided,  positive,     19
+    decided,  negative,     9
 ```
 
 *positive = closed-as-completed, accepted/bug-labeled, or open with maintainer engagement. negative = maintainer rejected (closed-as-not-planned with engagement), or silent treatment (open with no engagement after 7-day grace — wrong target). bot-closed = closed by a bot account, spam-labeled, or stale-bot patterns — these repos already have automated handling, so the offer is redundant. inconclusive = open without engagement within 7-day grace, or closed as duplicate. rate = positive ÷ (positive + negative).*
@@ -61,10 +60,13 @@ sankey-beta
 
 </details>
 
-## Feed · 🔥 3 streak
+## Feed · 🔥 6 streak
 
 | | repo | PR |
 |---|------|----|
+| ✅ | prowler-cloud/prowler | [#11094](https://github.com/prowler-cloud/prowler/pull/11094) feat(sagemaker): add sagemaker_domain_sso_con |
+| ✅ | macbre/sql-metadata | [#630](https://github.com/macbre/sql-metadata/pull/630) Fix UNION column alias aggregation |
+| ✅ | FyroxEngine/Fyrox | [#918](https://github.com/FyroxEngine/Fyrox/pull/918) Fix read_pixels_of_type UB: use bytemuck::cas |
 | ✅ | chapmanjacobd/library | [#49](https://github.com/chapmanjacobd/library/pull/49) fix: correct boolean conversion in ArgparseDi |
 | ✅ | mono0926/LicensePlist | [#256](https://github.com/mono0926/LicensePlist/pull/256) fix: resolve SourcePackages path for Xcode 26 |
 | ✅ | cackle-rs/cackle | [#53](https://github.com/cackle-rs/cackle/pull/53) Fix build instruction suggestions to use wild |
@@ -72,9 +74,6 @@ sankey-beta
 | ✅ | ag2ai/ag2 | [#2805](https://github.com/ag2ai/ag2/pull/2805) fix: initialize task variable in RemoteAgent  |
 | ✅ | hyperium/hyper | [#4065](https://github.com/hyperium/hyper/pull/4065) docs(error): add detailed doc comments to Err |
 | ✅ | luminal-ai/luminal | [#312](https://github.com/luminal-ai/luminal/pull/312) feat: add CUDA 13.2 support via cudarc 0.19.4 |
-| ❌ | boldsoftware/shelley | [#208](https://github.com/boldsoftware/shelley/pull/208) docs: document bang (!) command for shell acc |
-| ✅ | open-telemetry/opentelemetry-collector | [#15281](https://github.com/open-telemetry/opentelemetry-collector/pull/15281) Add testable examples for consumer package |
-| ✅ | MCPJam/inspector | [#2093](https://github.com/MCPJam/inspector/pull/2093) fix(docs): use latest release URLs for deskto |
 
 ## Leaderboard
 
@@ -82,11 +81,9 @@ sankey-beta
 
 | contributor | merged | rate | repos | median diff |
 |---|---|---|---|---|
-| SAY-5 | 117 | 68% | 93 | 15 |
-| kimjune01 | 48 | 60% | 45 | 40 |
-| mvanhorn | 33 | 86% | 26 | 54 |
-| yakushabb | 23 | 79% | 22 | 8 |
-| officialasishkumar | 16 | 88% | 13 | 58 |
+| kimjune01 | 49 | 60% | 46 | 41 |
+| mvanhorn | 33 | 84% | 26 | 54 |
+| yakushabb | 24 | 80% | 23 | 10 |
 | ununununium | 15 | 71% | 12 | 1 |
 | fdelbrayelle | 7 | 87% | 4 | 43 |
 | GeertvanHorrik | 2 | 66% | 1 | 20 |
