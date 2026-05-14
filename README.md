@@ -88,8 +88,6 @@ sankey-beta
 | yakushabb | 24 | 80% | 23 | 10 |
 | ununununium | 15 | 71% | 12 | 1 |
 | fdelbrayelle | 7 | 87% | 4 | 43 |
-| GeertvanHorrik | 2 | 66% | 1 | 20 |
-| tuanaiseo | 1 | 33% | 1 | 25 |
 
 [Join the leaderboard](https://github.com/kimjune01/sweep/blob/master/README.md) · [Protect your repo](https://github.com/kimjune01/sweep/blob/master/action.yml)
 
