@@ -1,26 +1,26 @@
-## 53% merge rate · 0 streak (22:49 UTC)
+## 55% merge rate · 3 streak (02:54 UTC)
 
 [Speedrunning Open Source](https://june.kim/speedrunning-open-source) · [why the loop works](https://june.kim/does-iteration-mitigate-slop-slope) (mechanism explainer; data is in the verify block below)
 
 ```mermaid
 sankey-beta
-    triaged,    submitted, 345
-    triaged,    throttled, 29
-    triaged,    rejected,  9
-    submitted,  resolved,  104
-    submitted,  dripped,   78
-    submitted,  open,      163
-    resolved,   merged,    56
+    triaged,    submitted, 316
+    triaged,    throttled, 26
+    triaged,    rejected,  7
+    submitted,  resolved,  107
+    submitted,  dripped,   49
+    submitted,  open,      160
+    resolved,   merged,    59
     resolved,   closed,    48
 ```
 
 ```mermaid
 xychart-beta
     title "PRs merged + defenses dispensed per day"
-    x-axis ["05-09", "05-10", "05-11", "05-12", "05-13"]
+    x-axis ["05-09", "05-10", "05-11", "05-12", "05-13", "05-14"]
     y-axis "count"
-    bar [1, 5, 8, 23, 19]
-    bar [0, 0, 0, 9, 9]
+    bar [1, 5, 8, 23, 20, 2]
+    bar [0, 0, 0, 9, 8, 0]
 ```
 
 *since 2026-05-09T00:34:00Z (pipeline epoch)*
@@ -37,17 +37,17 @@ xychart-beta
 
 ## Issues generated
 
-**72% positive reception** · [hypothesis graph](ISSUE_HYPOTHESIS_GRAPH.md)
+**68% positive reception** · [hypothesis graph](ISSUE_HYPOTHESIS_GRAPH.md)
 
-58 issues filed since 2026-05-12 (slop-filter campaign start) · 18 positive · 7 negative · 11 bot-closed (already protected) · 22 inconclusive
+60 issues filed since 2026-05-12 (slop-filter campaign start) · 17 positive · 8 negative · 12 bot-closed (already protected) · 23 inconclusive
 
 ```mermaid
 sankey-beta
     filed,    decided,      25
-    filed,    bot-closed,   11
-    filed,    inconclusive, 22
-    decided,  positive,     18
-    decided,  negative,     7
+    filed,    bot-closed,   12
+    filed,    inconclusive, 23
+    decided,  positive,     17
+    decided,  negative,     8
 ```
 
 *positive = closed-as-completed, accepted/bug-labeled, or open with maintainer engagement. negative = maintainer rejected (closed-as-not-planned with engagement), or silent treatment (open with no engagement after 7-day grace — wrong target). bot-closed = closed by a bot account, spam-labeled, or stale-bot patterns — these repos already have automated handling, so the offer is redundant. inconclusive = open without engagement within 7-day grace, or closed as duplicate. rate = positive ÷ (positive + negative).*
@@ -65,6 +65,9 @@ sankey-beta
 
 | | repo | PR |
 |---|------|----|
+| ✅ | chapmanjacobd/library | [#49](https://github.com/chapmanjacobd/library/pull/49) fix: correct boolean conversion in ArgparseDi |
+| ✅ | mono0926/LicensePlist | [#256](https://github.com/mono0926/LicensePlist/pull/256) fix: resolve SourcePackages path for Xcode 26 |
+| ✅ | cackle-rs/cackle | [#53](https://github.com/cackle-rs/cackle/pull/53) Fix build instruction suggestions to use wild |
 | ❌ | Jaxx497/NoctaVox | [#21](https://github.com/Jaxx497/NoctaVox/pull/21) fix: provide actionable error messages for da |
 | ✅ | ag2ai/ag2 | [#2805](https://github.com/ag2ai/ag2/pull/2805) fix: initialize task variable in RemoteAgent  |
 | ✅ | hyperium/hyper | [#4065](https://github.com/hyperium/hyper/pull/4065) docs(error): add detailed doc comments to Err |
@@ -72,25 +75,22 @@ sankey-beta
 | ❌ | boldsoftware/shelley | [#208](https://github.com/boldsoftware/shelley/pull/208) docs: document bang (!) command for shell acc |
 | ✅ | open-telemetry/opentelemetry-collector | [#15281](https://github.com/open-telemetry/opentelemetry-collector/pull/15281) Add testable examples for consumer package |
 | ✅ | MCPJam/inspector | [#2093](https://github.com/MCPJam/inspector/pull/2093) fix(docs): use latest release URLs for deskto |
-| ❌ | pvolok/mprocs | [#218](https://github.com/pvolok/mprocs/pull/218) Show autostart:false procs in gray instead of |
-| ❌ | pvolok/mprocs | [#217](https://github.com/pvolok/mprocs/pull/217) docs: document command menu (p key) |
-| ✅ | slatedb/slatedb | [#1654](https://github.com/slatedb/slatedb/pull/1654) Fix DbReaderBuilder bypassing DbCacheWrapper  |
 
 ## Leaderboard
 
 *since 2026-05-09 (pipeline epoch) | voluntary contributions to repos you don't own | non-owner only | [methodology](https://github.com/kimjune01/kimjune01)*
 
-| contributor | merged | rate | repos |
-|---|---|---|---|
-| SAY-5 | 112 | 67% | 93 |
-| kimjune01 | 45 | 58% | 42 |
-| mvanhorn | 31 | 86% | 24 |
-| yakushabb | 23 | 79% | 22 |
-| officialasishkumar | 15 | 88% | 12 |
-| ununununium | 14 | 70% | 11 |
-| fdelbrayelle | 7 | 87% | 4 |
-| GeertvanHorrik | 2 | 66% | 1 |
-| tuanaiseo | 1 | 33% | 1 |
+| contributor | merged | rate | repos | median diff |
+|---|---|---|---|---|
+| SAY-5 | 115 | 68% | 93 | 14 |
+| kimjune01 | 48 | 60% | 45 | 40 |
+| mvanhorn | 32 | 86% | 25 | 55 |
+| yakushabb | 23 | 79% | 22 | 8 |
+| officialasishkumar | 15 | 88% | 12 | 64 |
+| ununununium | 15 | 71% | 12 | 1 |
+| fdelbrayelle | 7 | 87% | 4 | 43 |
+| GeertvanHorrik | 2 | 66% | 1 | 20 |
+| tuanaiseo | 1 | 33% | 1 | 25 |
 
 [Join the leaderboard](https://github.com/kimjune01/sweep/blob/master/README.md) · [Protect your repo](https://github.com/kimjune01/sweep/blob/master/action.yml)
 
