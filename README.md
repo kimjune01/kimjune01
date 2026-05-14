@@ -1,6 +1,6 @@
 ## 56% merge rate (as of May 14, 2026)
 
-[Speedrunning Open Source](https://june.kim/speedrunning-open-source) · [why the loop works](https://june.kim/does-iteration-mitigate-slop-slope) (mechanism explainer; data is in the verify block below)
+[Speedrunning Open Source](https://june.kim/speedrunning-open-source) · [how the loop works](https://june.kim/does-iteration-mitigate-slop-slope) (mechanism explainer; data is in the verify block below)
 
 ```mermaid
 sankey-beta
@@ -54,8 +54,10 @@ sankey-beta
 <details>
 <summary>verify</summary>
 
-```bash
-~/.sweep/bin/scoreboard --since 2026-05-12
+```graphql
+{ filed: search(query: "is:issue author:kimjune01 created:>2026-05-12", type: ISSUE) { issueCount }
+  completed: search(query: "is:issue is:closed reason:completed author:kimjune01 created:>2026-05-12", type: ISSUE) { issueCount }
+  not_planned: search(query: "is:issue is:closed reason:not-planned author:kimjune01 created:>2026-05-12", type: ISSUE) { issueCount } }
 ```
 
 </details>
