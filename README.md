@@ -1,4 +1,4 @@
-## 56% merge rate (as of May 14, 2026)
+## 53% merge rate (as of May 20, 2026)
 
 [Speedrunning Open Source](https://june.kim/speedrunning-open-source) · [how the loop works](https://june.kim/does-iteration-mitigate-slop-slope) (mechanism explainer; data is in the verify block below)
 
@@ -7,11 +7,11 @@ sankey-beta
     triaged,    submitted, 322
     triaged,    throttled, 36
     triaged,    rejected,  10
-    submitted,  resolved,  110
-    submitted,  dripped,   46
-    submitted,  open,      166
-    resolved,   merged,    62
-    resolved,   closed,    48
+    submitted,  resolved,  150
+    submitted,  dripped,   43
+    submitted,  open,      129
+    resolved,   merged,    80
+    resolved,   closed,    70
 ```
 
 <img src="per-day-chart.svg" alt="PRs merged (blue) and defenses dispensed (orange) per day" style="max-width:100%; height:auto;" />
