@@ -1,6 +1,6 @@
 ## 53% merge rate (as of May 20, 2026)
 
-[Speedrunning Open Source](https://june.kim/speedrunning-open-source) · [how the loop works](https://june.kim/does-iteration-mitigate-slop-slope) (mechanism explainer; data is in the verify block below)
+[Speedrunning Open Source](https://june.kim/speedrunning-open-source) · **SWE-bench Verified: 97%** (426/438 eligible · [receipts + full-500 Sankey](https://github.com/kimjune01/swebench-verified))
 
 ```mermaid
 sankey-beta
