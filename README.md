@@ -18,6 +18,8 @@ sankey-beta
 
 *since 2026-05-09T00:34:00Z (pipeline epoch)*
 
+[Why the closed PRs closed](CLOSE_REASONS.md) — close-reason audit (most "closed" are self-withdrawals, no-AI-policy, duplicates, or bot closes; ~8 are maintainer merit-rejections). Machine-readable receipts: [`pr-receipts.jsonl`](pr-receipts.jsonl) (all merged + closed), [`closed-pr-reasons.jsonl`](closed-pr-reasons.jsonl) (per-PR reason + evidence).
+
 <details>
 <summary>verify</summary>
 
