@@ -56,3 +56,14 @@ closing actor's account; `no-AI policy`, `superseded`, and `merits` cite a verba
 closing comment in `closed-pr-reasons.jsonl`. Ambiguous closes are counted as
 rejections, not excluded. The point is not to move the headline — it stays 50.6% —
 but to show what the 79 closes are actually made of.
+
+**Why the campaign ended (resource constraint, disclosed — not used to adjust the
+denominator).** Work stopped in mid-May 2026 when the author lost access to the
+Linux/Windows development environment the campaign ran on. PRs that needed
+platform-specific follow-up to address maintainer feedback could not be iterated,
+so some were withdrawn and others remain open. These are counted in the
+denominator exactly as they stand — the open tail is not trimmed and the
+withdrawals are not reclassified; this note explains the tail, it does not move the
+number. With thanks to **EA**, whose research-token compute and development
+infrastructure supported this campaign during the author's affiliation (which
+ended in May 2026); EA did not commission, direct, or review the work.
