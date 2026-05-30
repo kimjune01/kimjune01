@@ -64,6 +64,6 @@ platform-specific follow-up to address maintainer feedback could not be iterated
 so some were withdrawn and others remain open. These are counted in the
 denominator exactly as they stand — the open tail is not trimmed and the
 withdrawals are not reclassified; this note explains the tail, it does not move the
-number. With thanks to **EA**, whose research-token compute and development
-infrastructure supported this campaign during the author's affiliation (which
-ended in May 2026); EA did not commission, direct, or review the work.
+number. With thanks to **Electronic Arts**, whose research-token compute and
+development infrastructure supported this campaign; Electronic Arts did not
+commission, direct, or review the work.
