@@ -1,6 +1,8 @@
-## 53% merge rate (as of May 20, 2026)
+I build agent pipelines that find, fix, and ship bugs in open-source repos I don't own. This page is the live scoreboard; every number links to its receipts.
 
-[Speedrunning Open Source](https://june.kim/speedrunning-open-source) · **SWE-bench Verified: 97%** (426/438 eligible · [receipts + full-500 Sankey](https://github.com/kimjune01/swebench-verified))
+## 53% merge rate · 80 merged / 150 resolved (as of May 20, 2026)
+
+[Speedrunning Open Source](https://june.kim/speedrunning-open-source) · **SWE-bench Verified: 97%** (426/438 eligible · 85% of the full 500 · [receipts + full-500 Sankey](https://github.com/kimjune01/swebench-verified))
 
 ```mermaid
 sankey-beta
@@ -32,7 +34,7 @@ sankey-beta
 
 ## Issues generated
 
-**67% positive reception** · [hypothesis graph](https://github.com/kimjune01/sweep/blob/master/ISSUE_HYPOTHESIS_GRAPH.md)
+**67% positive reception** (19 of 28 maintainer-decided) · [hypothesis graph](https://github.com/kimjune01/sweep/blob/master/ISSUE_HYPOTHESIS_GRAPH.md)
 
 65 issues filed since 2026-05-12 (slop-filter campaign start) · 19 positive · 9 negative · 12 bot-closed (already protected) · 25 inconclusive
 
@@ -60,22 +62,24 @@ sankey-beta
 
 ## Feed · 🔥 6 streak
 
+*✅ merged · ❌ closed unmerged*
+
 | | repo | PR |
 |---|------|----|
-| ✅ | prowler-cloud/prowler | [#11094](https://github.com/prowler-cloud/prowler/pull/11094) feat(sagemaker): add sagemaker_domain_sso_con |
+| ✅ | prowler-cloud/prowler | [#11094](https://github.com/prowler-cloud/prowler/pull/11094) feat(sagemaker): add sagemaker_domain_sso_configured check |
 | ✅ | macbre/sql-metadata | [#630](https://github.com/macbre/sql-metadata/pull/630) Fix UNION column alias aggregation |
-| ✅ | FyroxEngine/Fyrox | [#918](https://github.com/FyroxEngine/Fyrox/pull/918) Fix read_pixels_of_type UB: use bytemuck::cas |
-| ✅ | chapmanjacobd/library | [#49](https://github.com/chapmanjacobd/library/pull/49) fix: correct boolean conversion in ArgparseDi |
+| ✅ | FyroxEngine/Fyrox | [#918](https://github.com/FyroxEngine/Fyrox/pull/918) Fix read_pixels_of_type UB: use bytemuck::cast_slice |
+| ✅ | chapmanjacobd/library | [#49](https://github.com/chapmanjacobd/library/pull/49) fix: correct boolean conversion in ArgparseDict |
 | ✅ | mono0926/LicensePlist | [#256](https://github.com/mono0926/LicensePlist/pull/256) fix: resolve SourcePackages path for Xcode 26 |
-| ✅ | cackle-rs/cackle | [#53](https://github.com/cackle-rs/cackle/pull/53) Fix build instruction suggestions to use wild |
-| ❌ | Jaxx497/NoctaVox | [#21](https://github.com/Jaxx497/NoctaVox/pull/21) fix: provide actionable error messages for da |
-| ✅ | ag2ai/ag2 | [#2805](https://github.com/ag2ai/ag2/pull/2805) fix: initialize task variable in RemoteAgent  |
-| ✅ | hyperium/hyper | [#4065](https://github.com/hyperium/hyper/pull/4065) docs(error): add detailed doc comments to Err |
+| ✅ | cackle-rs/cackle | [#53](https://github.com/cackle-rs/cackle/pull/53) Fix build instruction suggestions to use wildcards |
+| ❌ | Jaxx497/NoctaVox | [#21](https://github.com/Jaxx497/NoctaVox/pull/21) fix: provide actionable error messages for database failures |
+| ✅ | ag2ai/ag2 | [#2805](https://github.com/ag2ai/ag2/pull/2805) fix: initialize task variable in RemoteAgent to prevent UnboundLocalError |
+| ✅ | hyperium/hyper | [#4065](https://github.com/hyperium/hyper/pull/4065) docs(error): add detailed doc comments to Error query methods |
 | ✅ | luminal-ai/luminal | [#312](https://github.com/luminal-ai/luminal/pull/312) feat: add CUDA 13.2 support via cudarc 0.19.4 |
 
 ## Leaderboard
 
-*since 2026-05-09 (pipeline epoch) | voluntary contributions to repos you don't own | non-owner only | [methodology](https://github.com/kimjune01/kimjune01)*
+*since 2026-05-09 (pipeline epoch) | voluntary contributions to repos you don't own | non-owner only | counts differ from the funnel above: separate query, older snapshot | [methodology](https://github.com/kimjune01/kimjune01)*
 
 | contributor | merged | rate | repos | median diff |
 |---|---|---|---|---|
