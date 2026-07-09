@@ -113,22 +113,6 @@ Most closed PRs are self-withdrawals, no-AI policies, duplicates, or bot closes;
 
 </details>
 
-## ⏳ Before this
-
-```mermaid
-timeline
-    2013 : iOS engineer
-         : Lipsi (#1 Lifestyle, US App Store), Firework
-    2019 : YouTube / Google
-         : re-architected the iOS rendering layer
-    2022 : Loom
-         : video reliability 97% to 99.7%
-    2024 : Applied AI
-         : agentic ingestion pipelines, macOS/Chrome context integrations
-    2026 : Independent evaluation engineer
-         : benchmark audits with receipts
-```
-
 ---
 
 [june.kim](https://june.kim) · [CC-BY-SA-NS](https://june.kim/cc-by-sa-ns)
