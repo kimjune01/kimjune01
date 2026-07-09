@@ -1,6 +1,57 @@
-## 53% merge rate (as of May 20, 2026)
+# June Kim
 
-[Speedrunning Open Source](https://june.kim/speedrunning-open-source) · **SWE-bench Verified: 97%** (426/438 eligible · [receipts + full-500 Sankey](https://github.com/kimjune01/swebench-verified))
+**Evaluation engineer.** I audit frontier coding benchmarks for construct validity, find where the headline metric measures something other than what it claims, and ship the receipts as preregistered, re-runnable artifacts. When I need to read a benchmark's test suite, I read it in whatever stack it ships.
+
+[![Blog](https://img.shields.io/badge/june.kim-blog-2b3137?style=flat-square)](https://june.kim)
+[![Resume](https://img.shields.io/badge/resume-pdf-2b3137?style=flat-square)](https://june.kim/resume)
+[![Vancouver](https://img.shields.io/badge/Vancouver-CA-2b3137?style=flat-square)](https://june.kim)
+![Stack](https://img.shields.io/badge/Rust·Go·C++·Python·Lean·TS-2b3137?style=flat-square)
+
+> The last three months, in one line: I ran independent audits on the benchmarks the field quotes, proved parts of an auction mechanism in Lean, and shipped 49 merged PRs into repos I don't own. Everything below is a link to a receipt.
+
+<sub>Expand a section to read the work. Every claim has a repo, a DOI, or a re-runnable command behind it.</sub>
+
+---
+
+<details open>
+<summary><b>🔬 Benchmark construct-validity audits</b> — the field's scoreboards, re-graded</summary>
+
+<br>
+
+A passing grade is a claim. I check whether the harness measures what the paper says it measures. Each audit is model-blind where it can be, preregistered, and archived so anyone can re-grade it from a committed diff.
+
+| benchmark | what I found | receipt |
+|---|---|---|
+| **SWE-bench Pro** — determinacy audit *(flagship)* | Proven **15% underdetermined floor**; 3 gold patches fail the benchmark's *own* verifier. Audited all 728 tasks, filed with maintainers. | [swebench-pro-audit](https://github.com/kimjune01/swebench-pro-audit) · [determinacy](https://github.com/kimjune01/determinacy) |
+| **SWE-bench Pro** — harness run | **95.3%** (694/728) under the official grader, preregistered and frozen, every verdict re-gradable. Solo, on a $200/mo plan. | [swebench-pro](https://github.com/kimjune01/swebench-pro) |
+| **ProgramBench** | The "% Resolved" metric scores **recall of published algorithms**, not source-blind reconstruction. 21+ programs gated on recalling a hash, cipher, or codec. | [program-bench-audit](https://github.com/kimjune01/program-bench-audit) |
+| **DeepSWE** | Applied each reference solution to its own verifier: **4 of 113 fail**. Under $1, under an hour, two-pass preregistered protocol. | [deepswe-run](https://github.com/kimjune01/deepswe-run) |
+| **SWE-rebench** | Determinacy audit: **14.5% pointer-checkable claimable spine** (7 airtight + 9 codebase-plural). | [swe-rebench-audit](https://github.com/kimjune01/swe-rebench-audit) |
+| **Terminal-Bench 2.1** | Frame-validity audit: does a passing grade forgive unwarranted destruction? | [terminal-bench-audit](https://github.com/kimjune01/terminal-bench-audit) |
+
+**The tool behind them:** [`determinacy`](https://github.com/kimjune01/determinacy) — grep-certified receipts for tasks where the hidden test grades what the spec never stated. Reusable across any SWE-bench-shaped benchmark.
+
+</details>
+
+<details>
+<summary><b>📐 Formal verification & soundness gates</b> — proofs, not vibes</summary>
+
+<br>
+
+| project | what it is | receipt |
+|---|---|---|
+| **auction-proof** | Lean 4 proofs for VCG auction properties. Companion to the DOI-archived preprint *Formally Verified VCG Mechanisms*. | [auction-proof](https://github.com/kimjune01/auction-proof) |
+| **enzyme-soundness-gate** | A proof-by-cases soundness gate that reproduced **two Enzyme-JAX compiler bugs from structure alone** (filed upstream: EnzymeAD/Enzyme-JAX #2570, #2571). Two autodiff fixes landed separately. | [enzyme-soundness-gate](https://github.com/kimjune01/enzyme-soundness-gate) |
+| **flux** | Contributions to refinement types for Rust. | [flux-rs/flux](https://github.com/flux-rs/flux) |
+
+</details>
+
+<details>
+<summary><b>🚀 Open-source speedrun</b> — 49 merged into repos I don't own</summary>
+
+<br>
+
+**53% merge rate** across 46 external repos since the pipeline epoch (2026-05-09). Voluntary, non-owner contributions only. [Speedrunning Open Source](https://june.kim/speedrunning-open-source).
 
 ```mermaid
 sankey-beta
@@ -16,12 +67,22 @@ sankey-beta
 
 <img src="per-day-chart.svg" alt="PRs merged (blue) and defenses dispensed (orange) per day" style="max-width:100%; height:auto;" />
 
-*since 2026-05-09T00:34:00Z (pipeline epoch)*
+[Why the closed PRs closed](CLOSE_REASONS.md) — most "closed" are self-withdrawals, no-AI-policy, duplicates, or bot closes; ~8 are maintainer merit-rejections. Receipts: [`pr-receipts.jsonl`](pr-receipts.jsonl) · [`closed-pr-reasons.jsonl`](closed-pr-reasons.jsonl).
 
-[Why the closed PRs closed](CLOSE_REASONS.md) — close-reason audit (most "closed" are self-withdrawals, no-AI-policy, duplicates, or bot closes; ~8 are maintainer merit-rejections). Machine-readable receipts: [`pr-receipts.jsonl`](pr-receipts.jsonl) (all merged + closed), [`closed-pr-reasons.jsonl`](closed-pr-reasons.jsonl) (per-PR reason + evidence).
+**Leaderboard** *(non-owner contributions since 2026-05-09)*
+
+| contributor | merged | rate | repos | median diff |
+|---|---|---|---|---|
+| SAY-5 | 127 | 70% | 48+ | 29 |
+| **kimjune01** | **49** | **60%** | **46** | **41** |
+| mvanhorn | 33 | 84% | 26 | 54 |
+| yakushabb | 24 | 80% | 23 | 10 |
+| ununununium | 15 | 71% | 12 | 1 |
+
+Representative merges: `hyperium/hyper`, `FyroxEngine/Fyrox`, `prowler-cloud/prowler`, `luminal-ai/luminal`, `ag2ai/ag2`, `cackle-rs/cackle`. [Join the leaderboard](https://github.com/kimjune01/sweep/blob/master/README.md) · [Protect your repo](https://github.com/kimjune01/sweep/blob/master/action.yml).
 
 <details>
-<summary>verify</summary>
+<summary>verify (GraphQL)</summary>
 
 ```graphql
 { merged: search(query: "is:pr is:merged author:kimjune01 created:>2026-05-09T00:34:00Z", type: ISSUE) { issueCount }
@@ -30,76 +91,49 @@ sankey-beta
 
 </details>
 
-## Issues generated
-
-**67% positive reception** · [hypothesis graph](https://github.com/kimjune01/sweep/blob/master/ISSUE_HYPOTHESIS_GRAPH.md)
-
-65 issues filed since 2026-05-12 (slop-filter campaign start) · 19 positive · 9 negative · 12 bot-closed (already protected) · 25 inconclusive
-
-```mermaid
-sankey-beta
-    filed,    decided,      28
-    filed,    bot-closed,   12
-    filed,    inconclusive, 25
-    decided,  positive,     19
-    decided,  negative,     9
-```
-
-*positive = closed-as-completed, accepted/bug-labeled, or open with maintainer engagement. negative = maintainer rejected (closed-as-not-planned with engagement), or silent treatment (open with no engagement after 7-day grace — wrong target). bot-closed = closed by a bot account, spam-labeled, or stale-bot patterns — these repos already have automated handling, so the offer is redundant. inconclusive = open without engagement within 7-day grace, or closed as duplicate. rate = positive ÷ (positive + negative).*
+</details>
 
 <details>
-<summary>verify</summary>
+<summary><b>🎲 Anytime-valid statistics & e-values</b> — evidence as a running bet</summary>
 
-```graphql
-{ filed: search(query: "is:issue author:kimjune01 created:>2026-05-12", type: ISSUE) { issueCount }
-  completed: search(query: "is:issue is:closed reason:completed author:kimjune01 created:>2026-05-12", type: ISSUE) { issueCount }
-  not_planned: search(query: "is:issue is:closed reason:not-planned author:kimjune01 created:>2026-05-12", type: ISSUE) { issueCount } }
-```
+<br>
+
+| project | what it is | receipt |
+|---|---|---|
+| **methodeutics** | E-value bankrolls: anytime-valid evidence as a running bet against your hypothesis. Now also a textbook. | [methodeutics](https://github.com/kimjune01/methodeutics) |
+| **return-to-sender** | Nodewise e-values under graph interference: synthetic validation of an abuse filter. | [return-to-sender](https://github.com/kimjune01/return-to-sender) |
+| **hygraph-mechanism** | A hypothesis-graph A/B with replayable receipts. *Silicon in verba*: take nobody's word for it, not even the machine's. | [hygraph-mechanism](https://github.com/kimjune01/hygraph-mechanism) |
+
+Published (DOI-archived preprints, full record at [june.kim](https://june.kim)): *The Hypothesis Graph* · *Verifiable Knowledge* · *What Cannot Be False Cannot Be True*.
 
 </details>
 
-## Feed · 🔥 6 streak
+<details>
+<summary><b>🧩 Agent & context infrastructure</b></summary>
 
-| | repo | PR |
-|---|------|----|
-| ✅ | prowler-cloud/prowler | [#11094](https://github.com/prowler-cloud/prowler/pull/11094) feat(sagemaker): add sagemaker_domain_sso_con |
-| ✅ | macbre/sql-metadata | [#630](https://github.com/macbre/sql-metadata/pull/630) Fix UNION column alias aggregation |
-| ✅ | FyroxEngine/Fyrox | [#918](https://github.com/FyroxEngine/Fyrox/pull/918) Fix read_pixels_of_type UB: use bytemuck::cas |
-| ✅ | chapmanjacobd/library | [#49](https://github.com/chapmanjacobd/library/pull/49) fix: correct boolean conversion in ArgparseDi |
-| ✅ | mono0926/LicensePlist | [#256](https://github.com/mono0926/LicensePlist/pull/256) fix: resolve SourcePackages path for Xcode 26 |
-| ✅ | cackle-rs/cackle | [#53](https://github.com/cackle-rs/cackle/pull/53) Fix build instruction suggestions to use wild |
-| ❌ | Jaxx497/NoctaVox | [#21](https://github.com/Jaxx497/NoctaVox/pull/21) fix: provide actionable error messages for da |
-| ✅ | ag2ai/ag2 | [#2805](https://github.com/ag2ai/ag2/pull/2805) fix: initialize task variable in RemoteAgent  |
-| ✅ | hyperium/hyper | [#4065](https://github.com/hyperium/hyper/pull/4065) docs(error): add detailed doc comments to Err |
-| ✅ | luminal-ai/luminal | [#312](https://github.com/luminal-ai/luminal/pull/312) feat: add CUDA 13.2 support via cudarc 0.19.4 |
+<br>
 
-## Leaderboard
+| project | what it is | receipt |
+|---|---|---|
+| **union-find-compaction** | Context compaction for chatbots that tracks cluster provenance, enabling consolidation instead of summarization. [Ported to gemini-cli](https://github.com/kimjune01/union-find-compaction-for-gemini-cli). | [union-find-compaction](https://github.com/kimjune01/union-find-compaction) |
+| **cord** | A coordination protocol for trees of Claude Code agents. | [cord](https://github.com/kimjune01/cord) |
+| **arc-agi-3** | An agent that learns game rules by acting, no priors injected. | [arc-agi-3](https://github.com/kimjune01/arc-agi-3) |
+| **abductor** | Execution-gated abductive evaluation for LLM-driven program repair. | [abductor](https://github.com/kimjune01/abductor) |
+| **generative-tau-bench** | Seeded replay-oracle extension of tau-bench for contamination-resistant, statistically honest tool-agent evaluation. | [generative-tau-bench](https://github.com/kimjune01/generative-tau-bench) |
 
-*since 2026-05-09 (pipeline epoch) | voluntary contributions to repos you don't own | non-owner only | [methodology](https://github.com/kimjune01/kimjune01)*
+</details>
 
-| contributor | merged | rate | repos | median diff |
-|---|---|---|---|---|
-| SAY-5 | 127 | 70% | 48+ | 29 |
-| kimjune01 | 49 | 60% | 46 | 41 |
-| mvanhorn | 33 | 84% | 26 | 54 |
-| yakushabb | 24 | 80% | 23 | 10 |
-| ununununium | 15 | 71% | 12 | 1 |
-| fdelbrayelle | 7 | 87% | 4 | 43 |
+<details>
+<summary><b>🛠️ Tools · 📜 Writing</b></summary>
 
-[Join the leaderboard](https://github.com/kimjune01/sweep/blob/master/README.md) · [Protect your repo](https://github.com/kimjune01/sweep/blob/master/action.yml)
+<br>
 
-## AI SLOP
+- **[linkedin-slop-filter](https://github.com/kimjune01/linkedin-slop-filter)** — Chrome extension that hides low-effort AI slop, using Chrome's built-in on-device model. 100% local.
+- **[peirce](https://github.com/kimjune01/peirce)** — transcriptions of the public-domain works of Charles Sanders Peirce (CC BY-SA 4.0).
+- **[june.kim](https://github.com/kimjune01/june.kim)** — the blog, where the methodology lives in public: preregistration checklists, a published null result, and a post-mortem of a $1,000 held-out-test-leakage mistake.
 
-| PR | time to close | bugs | title |
-|---|---|---|---|
-| [uptime-kuma#7371](https://github.com/louislam/uptime-kuma/pull/7371) | <1 min | 0 | 🚨⚠️AI Slop⚠️🚨 cherry-picked |
-| [uptime-kuma#7372](https://github.com/louislam/uptime-kuma/pull/7372) | <1 min | 0 | 🚨⚠️AI Slop⚠️🚨 cherry-picked |
-| [litestar#4755](https://github.com/litestar-org/litestar/pull/4755) | 7 hrs | 0 | closed per AI policy |
-| [ruff#25066](https://github.com/astral-sh/ruff/pull/25066) | 2 days | 0 | mainly produced by AI |
-| [llama.cpp#22873](https://github.com/ggml-org/llama.cpp/pull/22873) | 2 days | 1 | AI-generated PR detected |
-
-[hypothesis graph](https://github.com/kimjune01/sweep/blob/master/HYPOTHESIS_GRAPH.md)
+</details>
 
 ---
 
-[june.kim](https://june.kim) · [CC-BY-SA-NS](https://june.kim/cc-by-sa-ns)
+<sub>10+ years shipping software at Google/YouTube, Loom, and startups before this. Full history: [resume](https://june.kim/resume) · [june.kim](https://june.kim).</sub>
