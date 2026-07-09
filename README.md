@@ -7,7 +7,7 @@
 [![Vancouver](https://img.shields.io/badge/Vancouver-CA-2b3137?style=flat-square)](https://june.kim)
 ![Stack](https://img.shields.io/badge/Rust·Go·C++·Python·Lean·TS-2b3137?style=flat-square)
 
-> The last three months, in one line: I ran independent audits on the benchmarks the field quotes, proved parts of an auction mechanism in Lean, and shipped 49 merged PRs into repos I don't own. Everything below links to a receipt.
+> The last three months, in one line: I ran independent audits on the benchmarks the field quotes, wrote a trilogy on agent epistemics, proved an ad auction is VCG in Lean, and shipped 49 merged PRs into repos I don't own. Everything below links to a receipt.
 
 <sub>Expand a section to read the work. Every claim has a repo, a DOI, or a re-runnable command behind it.</sub>
 
@@ -30,6 +30,22 @@ A passing grade is a claim. I check whether the harness measures what the paper 
 | Terminal-Bench 2.1 | Frame-validity audit: does a passing grade forgive unwarranted destruction? | [terminal-bench-audit](https://github.com/kimjune01/terminal-bench-audit) |
 
 The tool behind them: [`determinacy`](https://github.com/kimjune01/determinacy), grep-certified receipts for tasks where the hidden test grades what the spec never stated. Reusable across any SWE-bench-shaped benchmark.
+
+</details>
+
+<details open>
+<summary>📚 Published research — DOI-archived preprints</summary>
+
+<br>
+
+Three papers form a trilogy on agent epistemics, from the philosophy down to the data structure, plus a Lean-checked mechanism-design proof. Each is preregistered where it makes a claim and rebuilt from its own committed source.
+
+| paper | in one line | read |
+|---|---|---|
+| The Hypothesis Graph | A Peirce-typed, kill-conditioned memory for coding agents. The data structure the other two run on. | [post](https://june.kim/the-hypothesis-graph-semantic-memory-methodeutics) · [PDF](https://june.kim/assets/the-hypothesis-graph-semantic-memory-methodeutics.pdf) |
+| What Cannot Be False Cannot Be True | The epistemology underneath it: truth is verifiable, the unverifiable is untrue. | [post](https://june.kim/what-cannot-be-false-cannot-be-true) · [DOI](https://doi.org/10.5281/zenodo.20754645) |
+| Verifiable Knowledge | The same frame carried to a population of agents, run as a protocol for trustless inheritance of claims. | [post](https://june.kim/verifiable-knowledge) · [DOI](https://doi.org/10.5281/zenodo.20754823) |
+| Formally Verified VCG Mechanisms | The `log(b) - ‖x-c‖²/σ²` ad-auction score is no heuristic. It is VCG, proven in Lean 4 with zero `sorry`. | [post](https://june.kim/formally-verified-vcg-mechanisms) · [DOI](https://doi.org/10.5281/zenodo.21214697) |
 
 </details>
 
@@ -104,7 +120,7 @@ Representative merges: `hyperium/hyper`, `FyroxEngine/Fyrox`, `prowler-cloud/pro
 | return-to-sender | Nodewise e-values under graph interference: synthetic validation of an abuse filter. | [return-to-sender](https://github.com/kimjune01/return-to-sender) |
 | hygraph-mechanism | A hypothesis-graph A/B with replayable receipts. *Silicon in verba*: take nobody's word for it, not even the machine's. | [hygraph-mechanism](https://github.com/kimjune01/hygraph-mechanism) |
 
-Published (DOI-archived preprints, full record at [june.kim](https://june.kim)): *The Hypothesis Graph* · *Verifiable Knowledge* · *What Cannot Be False Cannot Be True*.
+The published papers above are where this stats work turns into method.
 
 </details>
 
