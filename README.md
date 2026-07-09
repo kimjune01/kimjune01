@@ -2,7 +2,7 @@ I build agent pipelines that find, fix, and ship bugs in open-source repos I don
 
 ## 53% merge rate · 80 merged / 150 resolved (as of May 20, 2026)
 
-[Speedrunning Open Source](https://june.kim/speedrunning-open-source) · **SWE-bench Verified: 97%** (426/438 eligible · 85% of the full 500 · [receipts + full-500 Sankey](https://github.com/kimjune01/swebench-verified))
+[Speedrunning Open Source](https://june.kim/speedrunning-open-source) · [SWE-bench Verified receipts](https://github.com/kimjune01/swebench-verified)
 
 ```mermaid
 sankey-beta
